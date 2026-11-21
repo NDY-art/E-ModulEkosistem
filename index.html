@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#176b4d">
+<title>EcoQuest — Harmoni Ekosistem | IPAS Kelas V</title>
+<script>
+function handleAssetVideoError() {
+ const placeholder = document.getElementById('videoPlaceholder');
+ const localVid = document.getElementById('lessonLocalVideo');
+ if (localVid) localVid.classList.add('hidden');
+ if (placeholder) placeholder.classList.remove('hidden');
+}
+</script>
+<style>
+:root{--forest:#176b4d;--deep:#104432;--leaf:#55a96d;--mint:#e8f5e9;--sun:#f5c85b;--sky:#dff3f4;--ink:#20352b;--muted:#64766b;--paper:#fbfdf9;--white:#fff;--line:#dce9df;--coral:#ef8d70;--shadow:0 12px 32px #174a3012}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f2f7f1;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{min-height:100vh}.topbar{height:68px;background:var(--deep);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 max(18px,calc((100% - 1250px)/2));position:sticky;top:0;z-index:20;box-shadow:0 4px 18px #0c382833}.brand{display:flex;gap:10px;align-items:center;font-weight:850;letter-spacing:.2px}.brand-mark{width:39px;height:39px;border-radius:13px;background:#e1f4d8;color:var(--forest);display:grid;place-items:center;font-size:23px}.top-actions{display:flex;align-items:center;gap:10px}.pill{border:1px solid #ffffff42;padding:7px 12px;border-radius:99px;font-size:12px;color:#e8f5e9}.menu-btn{display:none;background:#ffffff18;color:white;border:1px solid #ffffff55;border-radius:10px;padding:8px 11px}.layout{max-width:1250px;margin:auto;display:grid;grid-template-columns:245px 1fr;gap:22px;padding:22px 18px 80px}.sidebar{align-self:start;position:sticky;top:88px;background:white;border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}.side-label{font-size:10px;letter-spacing:1.5px;font-weight:800;color:#8a9b8e;padding:10px 10px 8px}.nav{width:100%;display:flex;align-items:center;gap:11px;padding:11px 12px;margin:2px 0;border:0;border-radius:12px;background:transparent;text-align:left;color:#506459;font-weight:650;font-size:13px}.nav .ico{width:24px;text-align:center;font-size:17px}.nav:hover,.nav.active{background:var(--mint);color:var(--forest)}.side-progress{margin:16px 8px 5px;padding:14px;background:#f5faf3;border-radius:14px}.progress-line{height:7px;background:#dce9dc;border-radius:99px;overflow:hidden;margin:9px 0}.progress-line span{display:block;height:100%;width:0;background:var(--leaf);border-radius:99px;transition:.3s}.main{min-width:0}.page{display:none;animation:fade .25s ease}.page.active{display:block}@keyframes fade{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}.hero{background:linear-gradient(120deg,#14563e,#2e8a5b 62%,#75b96d);border-radius:24px;padding:30px;color:white;position:relative;overflow:hidden;min-height:250px;box-shadow:var(--shadow)}.hero:after{content:"🌳";position:absolute;font-size:160px;right:6%;bottom:-28px;filter:drop-shadow(0 10px 8px #073b2855);opacity:.95}.hero:before{content:"";position:absolute;width:240px;height:240px;border:1px solid #ffffff24;border-radius:50%;right:8%;top:-110px;box-shadow:0 0 0 30px #ffffff0c,0 0 0 60px #ffffff08}.eyebrow{font-size:11px;letter-spacing:1.7px;text-transform:uppercase;font-weight:850;color:#d7f3ce}.hero h1{font-size:clamp(29px,4vw,43px);line-height:1.05;margin:12px 0 10px;max-width:600px}.hero p{max-width:570px;color:#e3f4e6;line-height:1.65;font-size:14px}.hero .btn{margin-top:10px}.btn{border:0;border-radius:11px;padding:11px 16px;background:var(--forest);color:white;font-weight:750;font-size:13px;box-shadow:0 4px 10px #124a3020;transition:.18s}.btn:hover{transform:translateY(-1px);filter:brightness(1.07)}.btn.light{background:white;color:var(--forest)}.btn.gold{background:var(--sun);color:#4b3b13}.btn.outline{background:white;color:var(--forest);border:1px solid var(--line);box-shadow:none}.btn.small{padding:8px 11px;font-size:12px}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:25px 0 13px}.section-head h2{margin:0;font-size:21px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.card h3{font-size:16px;margin:7px 0}.card p{color:var(--muted);font-size:13px;line-height:1.6;margin:6px 0}.card-icon{width:44px;height:44px;border-radius:14px;background:var(--mint);display:grid;place-items:center;font-size:23px}.tag{display:inline-flex;background:#edf6ed;color:var(--forest);border-radius:99px;padding:5px 9px;font-size:10px;font-weight:800;letter-spacing:.4px}.muted{color:var(--muted)}.smalltext{font-size:12px;color:var(--muted)}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:15px;box-shadow:var(--shadow)}.panel h3{margin:0 0 10px}.callout{padding:14px 16px;border-radius:14px;background:#f0f8ed;border-left:4px solid var(--leaf);font-size:13px;line-height:1.65;margin:12px 0}.callout.warn{background:#fff8e8;border-color:var(--sun)}.callout.danger{background:#fff0e9;border-color:var(--coral)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:15px}.list{padding-left:19px;color:#4f6558;font-size:13px;line-height:1.8}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.table th{color:var(--forest);background:#f4faf3}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:13px}.label{display:block;font-size:12px;font-weight:750;margin:12px 0 6px}.field{width:100%;padding:11px 12px;border:1px solid #cfddd1;border-radius:10px;background:#fff;color:var(--ink);outline:none}.field:focus{border-color:var(--leaf);box-shadow:0 0 0 3px #55a96d20}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.between{display:flex;justify-content:space-between;align-items:center;gap:10px}.stat{background:white;border:1px solid var(--line);border-radius:16px;padding:15px}.stat b{font-size:25px;color:var(--forest);display:block}.stat span{font-size:11px;color:var(--muted)}.bar{height:9px;background:#e7eee7;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;background:var(--leaf);width:0;transition:.3s}.lesson-img{background:linear-gradient(135deg,#dff2d9,#d9eff0);border-radius:16px;min-height:130px;display:grid;place-items:center;font-size:72px;margin-bottom:12px}.chip{display:inline-block;background:#f0f5ef;border:1px solid var(--line);padding:7px 10px;border-radius:10px;font-size:12px;margin:3px}.quiz-option{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0;background:white;color:var(--ink);font-size:13px}.quiz-option:hover{border-color:var(--leaf);background:#f5faf3}.quiz-option.selected{border:2px solid var(--forest);background:#eff8ef}.feedback{padding:12px;border-radius:12px;margin-top:10px;font-size:13px;line-height:1.5}.good{background:#e7f6e8;color:#205c35}.bad{background:#fff0e9;color:#9a452e}.game-stage{background:linear-gradient(#dff2e9,#f7f5df);border:1px solid #cfe2d2;border-radius:18px;padding:17px;min-height:260px;position:relative;overflow:hidden}.game-world{min-height:180px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}.game-item{border:2px solid #d4e6d4;background:#fff;border-radius:15px;padding:12px 14px;font-size:30px;min-width:76px;text-align:center;box-shadow:0 5px 0 #c8dcc9;user-select:none}.game-item small{display:block;font-size:10px;color:var(--muted);font-weight:700}.game-item.clickable:hover{transform:translateY(-3px);border-color:var(--leaf)}.dropzone{border:2px dashed #a8c7aa;border-radius:13px;padding:15px;min-height:75px;text-align:center;background:#f8fcf7;font-size:12px}.dropzone.over{background:#e5f5e4;border-color:var(--forest)}
+
+.sim-scene{height:315px;border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(#9ed8e2 0 48%,#9acb76 48% 100%);perspective:800px;border:1px solid #c8dfcf;transition:background .5s}
+.sunball{position:absolute;right:11%;top:9%;width:48px;height:48px;border-radius:50%;background:#ffdf77;box-shadow:0 0 0 12px #ffdf7730,0 0 35px #ffe48a}
+.mountain{position:absolute;bottom:43%;width:0;height:0;border-left:110px solid transparent;border-right:110px solid transparent;border-bottom:130px solid #80b7a0;filter:drop-shadow(0 5px 0 #6b9f86)}
+.mountain.m1{left:8%}.mountain.m2{left:36%;transform:scale(.75);border-bottom-color:#9bc6a6}
+.ground{position:absolute;bottom:-40px;left:-5%;width:110%;height:170px;background:#70ad58;border-radius:50% 50% 0 0;box-shadow:inset 0 13px #8cc86c;transition:background .5s}
+.pond{position:absolute;bottom:35px;left:38%;width:28%;height:62px;background:#65c3d1;border:7px solid #b6d78b;border-radius:50%;transform:rotate(-7deg);box-shadow:inset 0 5px #b2e7e9;transition:all .4s}
+.scene-entities{position:absolute;inset:0;pointer-events:none}
+.entity-item{position:absolute;transition:all .5s cubic-bezier(.34,1.56,.64,1);filter:drop-shadow(0 5px 2px #24402844);animation:bob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes drip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(42px);opacity:0}}
+.drip-drop{position:absolute;font-size:18px;animation:drip 1s linear infinite}
+.scene-label{position:absolute;top:12px;left:13px;background:#ffffffeb;padding:7px 12px;border-radius:10px;font-size:11px;font-weight:800;color:#285a42;box-shadow:0 2px 8px #00000012}
+.sim-controls{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:15px}
+.control{background:#f5faf4;border:1px solid var(--line);padding:13px;border-radius:14px}
+.control label{font-size:12px;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.control small{display:block;font-size:11px;color:var(--muted);margin-top:3px;font-weight:400}
+.control input{width:100%;accent-color:var(--forest);margin-top:10px}
+.preset-bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;align-items:center}
+.preset-btn{background:#fff;border:1px solid #b8d4be;color:var(--forest);padding:6px 11px;border-radius:99px;font-size:11px;font-weight:750;transition:.15s}
+.preset-btn:hover{background:var(--mint);border-color:var(--forest)}
+
+.chart{height:160px;display:flex;align-items:end;gap:9px;padding:15px 10px 25px;border-bottom:1px solid var(--line);background:repeating-linear-gradient(to bottom,transparent 0 38px,#edf2ed 39px 40px)}.chart-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:end;height:100%;gap:5px}.chart-col i{display:block;width:min(35px,80%);border-radius:7px 7px 2px 2px;background:#69ad72;min-height:3px;transition:.3s}.chart-col em{font-style:normal;font-size:10px;color:var(--muted)}.chart-col b{font-size:10px}.edp-step{display:grid;grid-template-columns:38px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.edp-num{width:34px;height:34px;border-radius:11px;background:var(--mint);color:var(--forest);font-weight:900;display:grid;place-items:center}.edp-step h4{margin:0 0 5px;font-size:14px}.edp-step p{margin:0 0 8px;color:var(--muted);font-size:12px}.badge-score{background:#fff3cd;color:#755b13;border-radius:99px;padding:6px 10px;font-size:11px;font-weight:850}.footer{text-align:center;color:#829287;font-size:11px;padding:25px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#173f2e;color:white;padding:11px 17px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}
+
+/* === CHATBOT LALA STYLES === */
+.gema-fab{position:fixed;right:20px;bottom:20px;z-index:45;display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#176b4d,#2e8a5b);color:white;border:2px solid #d7f3ce;border-radius:99px;padding:6px 16px 6px 8px;box-shadow:0 10px 26px #0f3f2d45;transition:transform .2s,box-shadow .2s}
+.gema-fab:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 14px 32px #0f3f2d55}
+.gema-fab-avatar{width:46px;height:46px;border-radius:50%;background:#e8f5e9;display:grid;place-items:center;overflow:hidden;border:2px solid #f5c85b;flex-shrink:0}
+.gema-fab-avatar img,.gema-fab-avatar svg{width:100%;height:100%;object-fit:contain}
+.gema-fab-text{text-align:left;line-height:1.2}
+.gema-fab-text b{display:block;font-size:13px;letter-spacing:.2px}
+.gema-fab-text span{font-size:11px;color:#d7f3ce}
+.gema-pulse{position:absolute;top:-3px;right:-3px;width:13px;height:13px;background:#f5c85b;border:2px solid #176b4d;border-radius:50%}
+
+.gema-window{position:fixed;right:20px;bottom:88px;width:min(380px,calc(100vw - 28px));height:min(530px,calc(100vh - 115px));background:white;border:1px solid #cfe2d2;border-radius:22px;box-shadow:0 18px 48px #0d362638;z-index:46;display:flex;flex-direction:column;overflow:hidden;transform-origin:bottom right;transition:opacity .22s,transform .22s}
+.gema-window.closed{opacity:0;pointer-events:none;transform:scale(.92) translateY(14px)}
+.gema-head{background:linear-gradient(120deg,#104432,#1f7655);color:white;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.gema-head-info{display:flex;align-items:center;gap:10px}
+.gema-head-avatar{width:44px;height:44px;border-radius:14px;background:#e8f5e9;border:2px solid #f5c85b;overflow:hidden;display:grid;place-items:center;flex-shrink:0}
+.gema-head-avatar img,.gema-head-avatar svg{width:100%;height:100%;object-fit:contain}
+.gema-head-actions{display:flex;gap:6px}
+.gema-icon-btn{background:#ffffff1f;border:1px solid #ffffff38;color:white;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:14px}
+.gema-icon-btn:hover{background:#ffffff35}
+
+.gema-messages{flex:1;overflow-y:auto;padding:14px;background:#f6faf5;display:flex;flex-direction:column;gap:10px}
+.gema-msg{max-width:85%;padding:10px 13px;border-radius:16px;font-size:13px;line-height:1.55;word-wrap:break-word}
+.gema-msg.bot{align-self:flex-start;background:white;color:var(--ink);border:1px solid #dce9df;border-bottom-left-radius:4px;box-shadow:0 2px 6px #174a300a}
+.gema-msg.user{align-self:flex-end;background:var(--forest);color:white;border-bottom-right-radius:4px}
+.gema-msg.bot b{color:var(--forest)}
+.gema-typing{display:inline-flex;gap:4px;padding:4px 2px}
+.gema-typing span{width:7px;height:7px;border-radius:50%;background:#55a96d;animation:gemaBounce 1.1s infinite ease-in-out}
+.gema-typing span:nth-child(2){animation-delay:.18s}
+.gema-typing span:nth-child(3){animation-delay:.36s}
+@keyframes gemaBounce{0%,80%,100%{transform:translateY(0);opacity:.45}40%{transform:translateY(-5px);opacity:1}}
+
+.gema-chips{padding:8px 12px 4px;background:#f6faf5;display:flex;gap:6px;overflow-x:auto;border-top:1px solid #e7efe7;scrollbar-width:none}
+.gema-chips::-webkit-scrollbar{display:none}
+.gema-chip{white-space:nowrap;background:white;border:1px solid #c3dcc7;color:var(--forest);border-radius:99px;padding:5px 10px;font-size:11px;font-weight:700;flex-shrink:0}
+.gema-chip:hover{background:var(--mint);border-color:var(--forest)}
+
+.gema-input-bar{padding:10px 12px;background:white;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center}
+.gema-input{flex:1;border:1px solid #cfddd1;border-radius:12px;padding:9px 12px;font-size:13px;outline:none;background:#fbfdf9}
+.gema-input:focus{border-color:var(--leaf);background:white}
+.gema-send{background:var(--forest);color:white;border:0;border-radius:12px;padding:9px 14px;font-weight:750;font-size:13px;display:flex;align-items:center;gap:4px}
+.gema-send:disabled{opacity:.5;cursor:not-allowed}
+
+/* === FORUM KOLABORASI & UMPAN BALIK === */
+.collab-post{background:#fbfdf9;border:1px solid var(--line);border-radius:16px;padding:15px;margin-bottom:12px;transition:.2s}
+.collab-post.teacher{background:#f0f8ed;border-left:4px solid var(--forest)}
+.collab-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.collab-author{display:flex;align-items:center;gap:8px;font-weight:750;font-size:13px}
+.role-badge{font-size:10px;padding:3px 8px;border-radius:99px;font-weight:800;letter-spacing:.3px}
+.role-badge.guru{background:#176b4d;color:#fff}
+.role-badge.siswa{background:#e1f4d8;color:#176b4d}
+.collab-body{font-size:13.5px;line-height:1.6;color:var(--ink);white-space:pre-line;margin:6px 0 10px}
+.collab-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.collab-react-btn{background:white;border:1px solid var(--line);border-radius:99px;padding:5px 11px;font-size:12px;font-weight:700;color:var(--forest);display:inline-flex;align-items:center;gap:5px;transition:.15s}
+.collab-react-btn:hover{background:var(--mint);border-color:var(--forest)}
+.collab-replies{margin-top:10px;padding-left:14px;border-left:2px solid #cfe2d2;display:flex;flex-direction:column;gap:8px}
+.collab-reply-item{background:white;border:1px solid #e4eee5;border-radius:12px;padding:9px 12px;font-size:12.5px;line-height:1.5}
+.collab-reply-item.teacher-reply{background:#eef8ee;border-color:#b7d9bc}
+.collab-reply-form{display:flex;gap:8px;margin-top:10px}
+.collab-reply-form input{flex:1;padding:8px 11px;border:1px solid #cfddd1;border-radius:10px;font-size:12.5px;outline:none}
+.collab-reply-form input:focus{border-color:var(--leaf)}
+
+/* === VIDEO PEMBELAJARAN STYLES === */
+.video-box{position:relative;width:100%;aspect-ratio:16/9;min-height:190px;max-height:72vh;background:#0e2e22;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 20px #1044321c}
+.video-box iframe,.video-box video{position:absolute;inset:0;width:100%;height:100%;max-width:100%;max-height:100%;border:0;object-fit:contain;background:#071c14;display:block}
+.video-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;color:#e8f5e9;background:radial-gradient(circle at center,#185c42,#0c2c20)}
+.video-source-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;background:#f4faf3;border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:12px}
+.video-custom-box{background:#f8fcf7;border:1px dashed #9fc5a5;border-radius:14px;padding:12px;margin-bottom:12px}
+.video-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+.video-tab{background:#f5faf4;border:1px solid var(--line);border-radius:13px;padding:11px 12px;text-align:left;transition:.18s;color:var(--ink);min-height:48px}
+.video-tab:hover{border-color:var(--leaf);background:#ebf6ec}
+.video-tab.active{background:var(--mint);border:2px solid var(--forest);color:var(--forest)}
+.video-tab b{display:block;font-size:12px;line-height:1.35;margin-top:4px}
+.video-tab span{font-size:10px;font-weight:800;color:var(--muted)}
+.video-tab.active span{color:var(--forest)}
+
+/* === MOBILE FRIENDLY ENHANCEMENTS === */
+html,body{overflow-x:hidden;max-width:100%}
+.topbar{padding-top:env(safe-area-inset-top)}
+@media(max-width:850px){
+ .layout{grid-template-columns:1fr;padding:14px 12px 92px}
+ .sidebar{position:fixed;z-index:35;top:68px;left:0;bottom:0;width:min(285px,82vw);border-radius:0 20px 20px 0;transform:translateX(-110%);transition:.25s;overflow-y:auto;padding-bottom:90px}
+ .sidebar.open{transform:translateX(0)}
+ .sidebar-backdrop{display:none;position:fixed;inset:68px 0 0 0;background:#0a261b66;z-index:30;backdrop-filter:blur(2px)}
+ .sidebar-backdrop.show{display:block}
+ .nav{padding:13px 14px;font-size:14px;min-height:46px}
+ .menu-btn{display:flex;align-items:center;gap:6px;min-height:42px;padding:8px 13px;font-weight:750}
+ .grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero:after{right:-5%;opacity:.45}
+ .topbar{padding:0 14px}
+}
+@media(max-width:560px){
+ .grid,.grid.three,.two-col,.video-tabs{grid-template-columns:1fr}
+ .hero{padding:22px 18px;min-height:auto}
+ .hero:after{font-size:105px;right:-8%;bottom:-10px}
+ .sim-controls{grid-template-columns:1fr}
+ .top-actions .pill{display:none}
+ .section-head{align-items:start;flex-direction:column}
+ .card,.panel{padding:14px;border-radius:16px}
+ .btn{min-height:44px;padding:11px 15px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+ .btn.small{min-height:40px;padding:9px 12px}
+ .quiz-option{min-height:48px;padding:13px 14px;font-size:14px}
+ .field{min-height:44px;font-size:15px}
+ .sim-scene{height:255px}
+ #waterFilterLab .sim-scene{height:auto!important;min-height:240px;grid-template-columns:1fr!important}
+ .video-source-bar{flex-direction:column;align-items:stretch}
+ .video-source-bar .row{width:100%}
+ .video-source-bar .btn{flex:1}
+ .gema-fab{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:5px 13px 5px 6px}
+ .gema-fab-avatar{width:42px;height:42px}
+ .gema-window{right:10px;left:10px;bottom:calc(74px + env(safe-area-inset-bottom));width:auto;height:min(72vh,510px)}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+ <div class="brand"><div class="brand-mark">🌿</div><div>EcoQuest <span style="font-weight:400;color:#c6e5ce">| Harmoni Ekosistem</span></div></div>
+ <div class="top-actions"><span class="pill">IPAS • KELAS V • FASE C</span><button class="menu-btn" onclick="toggleMenu()">☰ Menu</button></div>
+</header>
+<div class="sidebar-backdrop" id="sidebarBackdrop" onclick="toggleMenu(false)"></div>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+ <div class="side-label">PETA PETUALANGAN</div>
+ <button class="nav active" data-page="home" onclick="go('home')"><span class="ico">🏡</span>Beranda</button>
+ <button class="nav" data-page="guide" onclick="go('guide')"><span class="ico">🧭</span>Petunjuk & Tujuan</button>
+ <button class="nav" data-page="learn" onclick="go('learn')"><span class="ico">📚</span>Eksplorasi Materi</button>
+ <button class="nav" data-page="puzzle" onclick="go('puzzle')"><span class="ico">🧩</span>Puzzle Biotik-Abiotik</button>
+ <button class="nav" data-page="lab" onclick="go('lab')"><span class="ico">🧪</span>Eco-Sim Virtual Lab</button>
+ <button class="nav" data-page="arcade" onclick="go('arcade')"><span class="ico">🕹️</span>Eco Arcade</button>
+ <button class="nav" data-page="edp" onclick="go('edp')"><span class="ico">🛠️</span>Proyek STEM – EDP</button>
+ <button class="nav" data-page="quiz" onclick="go('quiz')"><span class="ico">📝</span>Evaluasi Akhir</button>
+ <button class="nav" data-page="reflection" onclick="go('reflection')"><span class="ico">💭</span>Refleksi</button>
+ <button class="nav" data-page="collab" onclick="go('collab')"><span class="ico">💬</span>Diskusi & Umpan Balik</button>
+ <button class="nav" data-page="dashboard" onclick="go('dashboard')"><span class="ico">🏆</span>Dashboard Capaian</button>
+ <div class="side-progress"><div class="between"><b style="font-size:12px">Petualanganmu</b><b id="sidePercent" style="font-size:12px;color:var(--forest)">0%</b></div><div class="progress-line"><span id="sideBar"></span></div><div class="smalltext">Selesaikan misi untuk membuka capaian.</div></div>
+ <button class="nav" onclick="resetData()" style="color:#a45b48;margin-top:10px"><span class="ico">↻</span>Atur Ulang Progres</button>
+</aside>
+<main class="main">
+ <section class="page active" id="page-home">
+ <div class="hero"><div class="eyebrow">🌎 Misi Penjelajah Cilik • STEM Adventure</div><h1>Jaga Harmoni,<br>Selamatkan Ekosistem!</h1><p>Jelajahi hubungan makhluk hidup dan lingkungannya, lakukan eksperimen di Eco-Sim, lalu ciptakan solusi nyata untuk bumi yang lebih lestari.</p><div class="row"><button class="btn gold" onclick="go('guide')">Mulai Petualangan →</button><button class="btn light" onclick="toggleGemaChat(true)">🦋 Tanya Lala</button></div></div>
+ <div class="section-head"><div><h2>Selamat datang, Penjelajah!</h2><p>Isi identitasmu sebelum memulai pembelajaran.</p></div><span class="tag">BELAJAR SAMBIL BERTUALANG</span></div>
+ <div class="panel"><div class="two-col"><div><label class="label" for="studentName">Nama peserta didik</label><input class="field" id="studentName" placeholder="Tuliskan nama lengkapmu"></div><div><label class="label" for="studentClass">Kelas</label><input class="field" id="studentClass" placeholder="Contoh: V-A"></div></div><div class="row" style="margin-top:14px"><button class="btn" onclick="saveIdentity()">Simpan Identitas</button><span class="smalltext" id="identityStatus">Data disimpan di perangkat ini.</span></div></div>
+ <div class="section-head"><div><h2>Jelajahi 5 zona pembelajaran</h2><p>Setiap zona mengajakmu melakukan misi berbeda.</p></div></div>
+ <div class="grid three">
+  <div class="card"><div class="card-icon">🌱</div><h3>Kenali Ekosistem</h3><p>Temukan komponen hidup dan tak hidup serta hubungan di antara keduanya.</p><button class="btn outline small" onclick="go('learn')">Jelajahi</button></div>
+  <div class="card"><div class="card-icon">🧪</div><h3>Laboratorium Maya</h3><p>Ubah kondisi lingkungan dan amati perubahan populasi.</p><button class="btn outline small" onclick="go('lab')">Bereksperimen</button></div>
+  <div class="card"><div class="card-icon">🕹️</div><h3>Eco Arcade</h3><p>Asah pemahaman melalui lima game penuh tantangan.</p><button class="btn outline small" onclick="go('arcade')">Main Game</button></div>
+ </div>
+ <div class="section-head"><div><h2>Target belajarmu</h2><p>Tiga tujuan pembelajaran yang akan kamu capai.</p></div></div>
+ <div class="grid"><div class="card"><span class="tag">TP 1</span><h3>Klasifikasi komponen</h3><p>Mengklasifikasikan komponen biotik dan abiotik melalui puzzle interaktif dengan tepat.</p></div><div class="card"><span class="tag">TP 2</span><h3>Analisis ekosistem</h3><p>Menganalisis aliran energi dan dinamika populasi pada simulasi Eco-Sim berbasis bukti (CER).</p></div><div class="card"><span class="tag">TP 3</span><h3>Rekayasa lingkungan</h3><p>Merancang solusi lingkungan terjangkau menggunakan enam tahap EDP.</p></div><div class="card"><span class="tag">STEM</span><h3>Belajar terhubung</h3><p>Menggabungkan sains, teknologi, rekayasa, dan matematika untuk memecahkan masalah nyata.</p></div></div>
+</section>
+
+<section class="page" id="page-guide">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 01 • ORIENTASI</span><h2>Petunjuk & Tujuan Pembelajaran</h2><p>Pahami misi sebelum memulai petualangan.</p></div></div>
+ <div class="panel"><h3>📖 Cara menggunakan e-modul</h3><ol class="list"><li>Masukkan nama dan kelas pada halaman Beranda.</li><li>Pelajari materi secara berurutan dan amati ilustrasi.</li><li>Kerjakan puzzle untuk mengenali komponen ekosistem.</li><li>Lakukan percobaan Eco-Sim, catat bukti, lalu tulis kesimpulan CER.</li><li>Mainkan game arcade dan selesaikan proyek EDP.</li><li>Kerjakan evaluasi akhir, isi refleksi, dan lihat dashboard capaian.</li></ol><div class="callout">💡 Tips: Jika ada bagian yang membingungkan, klik ikon <b>Lala</b> di pojok kanan bawah untuk bertanya kapan saja!</div></div>
+ <div class="panel"><h3>🎯 Capaian Pembelajaran (CP) – Elemen IPAS</h3><p style="line-height:1.8;font-size:14px">Pada akhir Fase C, peserta didik menganalisis hubungan antar komponen biotik dan abiotik serta keterkaitannya dalam ekosistem, serta menerapkan pendekatan rekayasa sederhana (EDP) untuk menyelesaikan permasalahan lingkungan hidup secara berkelanjutan.</p></div>
+ <div class="panel"><h3>🎯 Tujuan Pembelajaran (TP)</h3><div class="edp-step"><div class="edp-num">1</div><div><h4>Mengklasifikasikan komponen</h4><p>Peserta didik mampu mengklasifikasikan komponen biotik dan abiotik melalui puzzle interaktif dengan tepat.</p></div></div><div class="edp-step"><div class="edp-num">2</div><div><h4>Menganalisis aliran energi dan dinamika populasi</h4><p>Peserta didik dapat menganalisis aliran energi dan dinamika populasi pada simulasi Eco-Sim berbasis bukti (CER).</p></div></div><div class="edp-step"><div class="edp-num">3</div><div><h4>Merancang solusi rekayasa</h4><p>Peserta didik mampu merancang solusi rekayasa lingkungan terjangkau menggunakan enam tahap Engineering Design Process.</p></div></div></div>
+ <div class="panel"><h3>🔬 Integrasi STEM</h3><div class="grid"><div><b>🔎 Science – Sains</b><p class="smalltext">Konsep ekosistem, interaksi, energi, dan populasi.</p></div><div><b>💻 Technology – Teknologi</b><p class="smalltext">Memanfaatkan simulasi, media digital, dan alat sederhana.</p></div><div><b>🛠️ Engineering – Rekayasa</b><p class="smalltext">Merancang, membuat, menguji, dan memperbaiki prototipe.</p></div><div><b>📏 Mathematics – Matematika</b><p class="smalltext">Membaca data, membandingkan jumlah, dan menafsirkan grafik.</p></div></div></div>
+ <button class="btn" onclick="go('learn')">Lanjut ke Materi →</button>
+</section>
+
+<section class="page" id="page-learn">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 02 • EKSPLORASI</span><h2>Eksplorasi Harmoni Ekosistem</h2><p>Putar video pembelajaran di bawah, amati hubungan, dan temukan pola alam.</p></div><span class="tag">MATERI & VIDEO IPAS</span></div>
+ 
+ <div class="panel">
+  <div class="between" style="margin-bottom:10px;flex-wrap:wrap">
+   <div>
+    <span class="tag">🎬 BIOSKOP BELAJAR IPAS</span>
+    <h3 style="margin:6px 0 2px">Video Pembelajaran: Harmoni dalam Ekosistem</h3>
+    <p class="smalltext">Tonton video pembelajaran berikut sebelum membaca rangkuman materi di bawah.</p>
+   </div>
+  </div>
+
+  <!-- Pemutar video langsung menautkan file vid.mp4 yang berada satu folder dengan index.html -->
+  <div class="video-box" id="videoContainer">
+   <video id="lessonLocalVideo" src="vid.mp4" controls playsinline webkit-playsinline controlsList="nodownload" preload="metadata" onerror="handleAssetVideoError()"></video>
+   <div class="video-placeholder hidden" id="videoPlaceholder">
+    <div style="font-size:46px;margin-bottom:8px">🎞️</div>
+    <b style="font-size:15px;margin-bottom:6px">File <code>vid.mp4</code> belum terbaca</b>
+    <p style="font-size:12px;color:#cbe6d1;max-width:420px;margin:0">Pastikan file video bernama <b>vid.mp4</b> sudah disimpan di folder yang sama dengan <b>index.html</b>.</p>
+   </div>
+  </div>
+
+  <div class="callout" id="videoSummaryBox" style="margin-top:12px">
+   📌 <b>Panduan Menonton:</b> Amati hubungan antara makhluk hidup (<b>biotik</b>) dan lingkungan tak hidup (<b>abiotik</b>) pada video pembelajaran di atas.
+  </div>
+  <div class="row" style="margin-top:10px">
+   <button class="btn outline small" id="videoAskGemaBtn" onclick="askGemaWithPrompt('Aku baru saja menonton video pembelajaran tentang Harmoni dalam Ekosistem. Bisa bantu jelaskan poin paling pentingnya?')">🦋 Diskusikan Video dengan Lala</button>
+  </div>
+ </div>
+
+ <div class="panel"><div class="lesson-img">🌳🦋💧</div><h3>1. Apa itu ekosistem?</h3><p>Ekosistem adalah kesatuan antara makhluk hidup dan lingkungan tak hidup yang saling berinteraksi di suatu tempat. Hutan, sawah, sungai, kolam, dan laut merupakan contoh ekosistem.</p><div class="callout">🌿 <b>Harmoni ekosistem</b> terjadi ketika komponen-komponen di dalamnya berinteraksi dan menjalankan perannya sehingga keseimbangan lingkungan tetap terjaga.</div></div>
+ <div class="grid">
+  <div class="card"><div class="lesson-img">🐦🌱🐟</div><h3>2. Komponen Biotik</h3><p>Biotik adalah seluruh komponen makhluk hidup dalam ekosistem.</p><ul class="list"><li><b>Produsen:</b> tumbuhan hijau yang membuat makanan sendiri.</li><li><b>Konsumen:</b> hewan atau organisme yang memperoleh makanan dari organisme lain.</li><li><b>Pengurai:</b> bakteri dan jamur yang menguraikan sisa makhluk hidup.</li></ul><span class="chip">🌳 Pohon</span><span class="chip">🐇 Kelinci</span><span class="chip">🍄 Jamur</span><span class="chip">🦠 Bakteri</span></div>
+  <div class="card"><div class="lesson-img">☀️💨🪨</div><h3>3. Komponen Abiotik</h3><p>Abiotik adalah benda atau faktor tak hidup yang memengaruhi kehidupan organisme.</p><ul class="list"><li>Cahaya matahari</li><li>Air dan udara</li><li>Tanah dan batu</li><li>Suhu dan kelembapan</li></ul><span class="chip">☀️ Cahaya</span><span class="chip">💧 Air</span><span class="chip">🪨 Batu</span><span class="chip">🌬️ Udara</span></div>
+ </div>
+ <div class="panel"><h3>4. Interaksi dalam ekosistem</h3><div class="grid three"><div><div class="lesson-img">🐝🌼</div><b>Mutualisme</b><p>Kedua organisme memperoleh keuntungan. Contoh: lebah dan bunga.</p></div><div><div class="lesson-img">🌳🪴</div><b>Kompetisi</b><p>Organisme bersaing memperoleh sumber daya, misalnya cahaya atau makanan.</p></div><div><div class="lesson-img">🦊🐇</div><b>Predasi</b><p>Hubungan pemangsa dan mangsa, misalnya rubah memangsa kelinci.</p></div></div><div class="callout">Contoh lain: benalu yang mengambil nutrisi dari pohon merupakan parasitisme. Tidak semua interaksi memberi keuntungan kepada kedua pihak.</div></div>
+ <div class="panel"><h3>5. Rantai makanan dan aliran energi</h3><p>Rantai makanan menunjukkan perpindahan energi melalui proses makan dan dimakan. Arah panah menunjukkan aliran energi dari organisme yang dimakan menuju pemakan.</p><div class="row" style="justify-content:center;gap:5px;margin:20px 0;flex-wrap:wrap"><span class="chip">☀️ Matahari</span><b>→</b><span class="chip">🌿 Rumput</span><b>→</b><span class="chip">🐇 Kelinci</span><b>→</b><span class="chip">🦊 Rubah</span></div><p class="smalltext">Energi yang tersedia umumnya berkurang pada tingkat trofik yang lebih tinggi karena organisme menggunakan energi untuk hidup dan sebagian terlepas sebagai panas.</p></div>
+ <div class="panel"><h3>6. Jaring-jaring makanan</h3><p>Beberapa rantai makanan dapat saling terhubung membentuk jaring-jaring makanan. Satu organisme dapat memiliki lebih dari satu sumber makanan atau pemangsa.</p><div class="lesson-img">🌿🐛🐸🐍🦅</div><p>Jika satu populasi berubah, organisme lain yang terhubung juga dapat terpengaruh. Karena itu, keanekaragaman hayati membantu menjaga kestabilan ekosistem.</p></div>
+ <div class="panel"><h3>7. Dinamika populasi dan gangguan ekosistem</h3><p>Populasi dapat bertambah atau berkurang karena kelahiran, kematian, perpindahan, ketersediaan makanan, air, ruang, penyakit, predator, dan perubahan lingkungan.</p><div class="grid"><div class="callout"><b>Jika tumbuhan berkurang</b><br>Kelinci dapat kekurangan makanan sehingga populasinya menurun.</div><div class="callout warn"><b>Jika predator berkurang</b><br>Populasi mangsa dapat meningkat dan memberi tekanan lebih besar pada tumbuhan.</div></div></div>
+ <div class="panel"><h3>8. Menjaga keseimbangan ekosistem</h3><p>Menjaga habitat, mengurangi sampah, menghemat air, menanam tumbuhan lokal, dan tidak menangkap satwa liar sembarangan merupakan tindakan yang membantu kelestarian ekosistem.</p><button class="btn" onclick="mark('learn');go('puzzle')">Materi selesai – Kerjakan Puzzle →</button></div>
+</section>
+
+<section class="page" id="page-puzzle">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 03 • MISI KLASIFIKASI</span><h2>Puzzle Biotik & Abiotik</h2><p>Pilih setiap kartu lalu tempatkan ke kelompok yang tepat.</p></div><span class="badge-score" id="puzzleScore">Skor: 0</span></div>
+ <div class="panel"><div class="between"><b>🧩 Misi: Kenali penghuni ekosistem</b><span class="smalltext" id="puzzleCount">0 / 10 benar</span></div><p class="smalltext">Klik kartu, kemudian klik kotak Biotik atau Abiotik. Jawaban benar mendapat 10 poin.</p><div class="game-world" id="puzzleItems"></div><div class="grid" style="margin-top:12px"><div class="dropzone" onclick="classify('biotik')"><div style="font-size:26px">🌱</div><b>BIOTIK</b><div class="smalltext">Makhluk hidup</div></div><div class="dropzone" onclick="classify('abiotik')"><div style="font-size:26px">☀️</div><b>ABIOTIK</b><div class="smalltext">Benda/faktor tak hidup</div></div></div><div id="puzzleFeedback" class="smalltext" style="margin-top:12px">Pilih kartu untuk memulai.</div><div class="row" style="margin-top:15px"><button class="btn outline" onclick="resetPuzzle()">Ulangi Puzzle</button><button class="btn" onclick="go('lab')">Ke Eco-Sim →</button></div></div>
+</section>
+
+<section class="page" id="page-lab">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 04 • INVESTIGASI</span><h2>Eco-Sim Virtual Lab</h2><p>Amati bagaimana perubahan satu makhluk hidup atau air memengaruhi seluruh isi hutan.</p></div><span class="tag">SIMULASI INTERAKTIF</span></div>
+ 
+ <div class="callout">
+  <b>🧭 Langkah Percobaan (3 Langkah Mudah):</b><br>
+  1️⃣ <b>Pilih Skenario</b> atau geser pengatur <b>Tumbuhan, Air, dan Rubah</b> di bawah.<br>
+  2️⃣ Klik tombol <b>▶ Jalankan Simulasi</b> untuk melihat perubahan selama 8 bulan (T0 sampai T8).<br>
+  3️⃣ Perhatikan <b>jumlah hewan di layar & grafik</b>, lalu tuliskan kesimpulanmu di kotak CER!
+ </div>
+
+ <div class="preset-bar">
+  <span class="smalltext"><b>Coba Skenario Cepat:</b></span>
+  <button class="preset-btn" onclick="setLabPreset(70,70,30)">🌿 Hutan Seimbang</button>
+  <button class="preset-btn" onclick="setLabPreset(60,15,30)">☀️ Kemarau Panjang (Air Sedikit)</button>
+  <button class="preset-btn" onclick="setLabPreset(70,70,75)">🦊 Terlalu Banyak Rubah</button>
+  <button class="preset-btn" onclick="setLabPreset(70,70,0)">🐇 Tanpa Pemangsa (0 Rubah)</button>
+ </div>
+
+ <div class="sim-scene" id="simSceneBg">
+  <div class="sunball"></div>
+  <div class="mountain m1"></div>
+  <div class="mountain m2"></div>
+  <div class="ground" id="simGround"></div>
+  <div class="pond" id="simPond"></div>
+  <div class="scene-entities" id="simEntities"></div>
+  <div class="scene-label" id="simSceneBadge">🌲 Rantai Makanan: 🌿 Tumbuhan → 🐇 Kelinci → 🦊 Rubah</div>
+ </div>
+
+ <div class="sim-controls">
+  <div class="control">
+   <label>🌿 Tumbuhan (Makanan) <b id="plantVal">70</b></label>
+   <small>Sumber makanan utama kelinci</small>
+   <input id="plants" type="range" min="10" max="100" value="70" oninput="syncLab()">
+  </div>
+  <div class="control">
+   <label>💧 Ketersediaan Air <b id="waterVal">70</b></label>
+   <small>Membantu tumbuhan tumbuh subur</small>
+   <input id="water" type="range" min="10" max="100" value="70" oninput="syncLab()">
+  </div>
+  <div class="control">
+   <label>🦊 Rubah (Pemangsa) <b id="foxVal">30</b></label>
+   <small>Memangsa kelinci agar tidak berlebihan</small>
+   <input id="foxes" type="range" min="0" max="80" value="30" oninput="syncLab()">
+  </div>
+ </div>
+
+ <div class="row" style="margin-top:13px">
+  <button class="btn" onclick="runSimulation()">▶ Jalankan Simulasi</button>
+  <button class="btn outline" onclick="resetLab()">↻ Atur Ulang</button>
+  <span class="smalltext" id="simStatus">Geser pengaturan lalu tekan <b>Jalankan Simulasi</b>.</span>
+ </div>
+
+ <div class="panel">
+  <div class="between"><h3>📊 Hasil Pengamatan Populasi</h3><span class="tag" id="simCondition">Kondisi Awal</span></div>
+  <p class="smalltext">Angka di bawah menunjukkan skor populasi (skala 0–100) setelah simulasi berjalan selama 8 tahap waktu.</p>
+  <div class="grid three" style="margin-top:12px">
+   <div class="stat" style="border-left:4px solid #55a96d"><b id="plantPop">70</b><span>🌿 Skor Tumbuhan</span></div>
+   <div class="stat" style="border-left:4px solid #4b9bc4"><b id="rabbitPop">50</b><span>🐇 Skor Kelinci</span></div>
+   <div class="stat" style="border-left:4px solid #e69a54"><b id="foxPop">30</b><span>🦊 Skor Rubah</span></div>
+  </div>
+  <div class="chart" id="simChart" style="margin-top:14px">
+   <div class="chart-col"><b>70</b><i style="height:70%;background:#55a96d"></i><em>Tumbuhan</em></div>
+   <div class="chart-col"><b>50</b><i style="height:50%;background:#4b9bc4"></i><em>Kelinci</em></div>
+   <div class="chart-col"><b>30</b><i style="height:30%;background:#e69a54"></i><em>Rubah</em></div>
+  </div>
+
+  <div class="section-head" style="margin-top:22px">
+   <div><h3>📈 Grafik Perubahan dari Waktu ke Waktu (T0 → T8)</h3><p>Garis naik artinya populasi bertambah, garis turun artinya populasi berkurang.</p></div>
+  </div>
+  <div id="simTrendChart" style="width:100%;overflow:hidden;background:#fafdfb;border:1px solid var(--line);border-radius:12px;padding:8px"></div>
+  <div class="row" style="gap:16px;margin-top:10px;justify-content:center">
+   <span class="smalltext"><b style="color:#55a96d">● Garis Hijau:</b> Tumbuhan</span>
+   <span class="smalltext"><b style="color:#4b9bc4">● Garis Biru:</b> Kelinci</span>
+   <span class="smalltext"><b style="color:#e69a54">● Garis Oranye:</b> Rubah</span>
+  </div>
+  <div class="callout" id="simImpact">Klik <b>▶ Jalankan Simulasi</b> di atas untuk melihat cerita perubahan ekosistem di sini!</div>
+ </div>
+
+ <div class="panel">
+  <h3>🧠 Catatan CER (Bukti Ilmiah)</h3>
+  <p class="smalltext">Tuliskan hasil pengamatanmu menggunakan 3 langkah berpikir ilmuwan di bawah ini:</p>
+  <label class="label">1. C – Claim (Kesimpulanmu): Apa yang terjadi pada ekosistem saat kamu mengubah pengaturan?</label>
+  <textarea class="field" id="cerClaim" rows="2" placeholder="Contoh: Jika air dikurangi menjadi sedikit, maka jumlah tumbuhan dan kelinci ikut menurun."></textarea>
+  <label class="label">2. E – Evidence (Bukti Angka): Tuliskan angka dari grafik/kartu hasil simulasi yang membuktikannya!</label>
+  <textarea class="field" id="cerEvidence" rows="2" placeholder="Contoh: Saat air diatur ke 15, skor tumbuhan turun dari 60 menjadi 21, dan kelinci turun dari 50 menjadi 28."></textarea>
+  <label class="label">3. R – Reasoning (Alasan Sains): Mengapa hal tersebut bisa terjadi?</label>
+  <textarea class="field" id="cerReason" rows="2" placeholder="Contoh: Karena tumbuhan butuh air untuk fotosintesis. Jika tumbuhan mati, kelinci kehilangan sumber makanannya."></textarea>
+  <div class="row" style="margin-top:12px">
+   <button class="btn" onclick="saveCER()">💾 Simpan Analisis CER</button>
+   <button class="btn outline small" onclick="shareWorkToCollab('cer')">💬 Bagikan ke Forum Kelas</button>
+   <button class="btn outline small" onclick="askGemaWithPrompt('Bantu aku mengecek dan memberi masukan untuk kesimpulan CER di Eco-Sim Virtual Lab!')">🦋 Minta Bantuan Lala</button>
+   <span class="smalltext" id="cerStatus"></span>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="page-arcade">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 05 • ECO ARCADE</span><h2>Game Penjaga Bumi</h2><p>Pilih permainan, selesaikan misi, dan kumpulkan poin.</p></div><span class="badge-score">Total poin: <span id="arcadeTotal">0</span></span></div>
+ <div class="grid">
+  <div class="card"><div class="card-icon">🧺</div><h3>1. Eco Catcher</h3><p>Pilah benda yang ditemukan di alam. Masukkan makhluk hidup ke Biotik dan benda tak hidup ke Abiotik.</p><button class="btn small" onclick="startGame('catcher')">Mainkan</button></div>
+  <div class="card"><div class="card-icon">🏃</div><h3>2. Food Chain Runner</h3><p>Susun urutan rantai makanan dari sumber energi hingga konsumen.</p><button class="btn small" onclick="startGame('runner')">Mainkan</button></div>
+  <div class="card"><div class="card-icon">🛡️</div><h3>3. Eco Defender</h3><p>Pilih tindakan yang paling tepat untuk menjaga keseimbangan ekosistem.</p><button class="btn small" onclick="startGame('defender')">Mainkan</button></div>
+  <div class="card"><div class="card-icon">🧩</div><h3>4. Puzzle Ecosystem</h3><p>Pasangkan organisme dengan perannya di dalam ekosistem.</p><button class="btn small" onclick="startGame('puzzle')">Mainkan</button></div>
+  <div class="card"><div class="card-icon">🌍</div><h3>5. Mission Green Earth</h3><p>Hadapi masalah lingkungan dan tentukan solusi berkelanjutan.</p><button class="btn small" onclick="startGame('mission')">Mainkan</button></div>
+ </div>
+ <div class="panel hidden" id="gamePanel"><div class="between"><div><span class="tag">ARCADE MISSION</span><h3 id="gameTitle" style="margin:8px 0 0">Game</h3></div><button class="btn outline small" onclick="closeGame()">Tutup ✕</button></div><p class="smalltext" id="gameInstruction"></p><div class="game-stage"><div class="game-world" id="gameWorld"></div><div id="gameQuestion"></div></div><div class="between" style="margin-top:12px"><span class="smalltext" id="gameProgress">Misi 0</span><b id="gameScore">0 poin</b></div><div class="bar" style="margin-top:8px"><span id="gameBar"></span></div><div id="gameFeedback"></div><div class="row" style="margin-top:12px"><button class="btn outline small" onclick="restartGame()">Ulangi game</button><button class="btn small" id="nextGameBtn" onclick="nextGame()" disabled>Lanjut</button></div></div>
+</section>
+
+<section class="page" id="page-edp">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 06 • ENGINEERING</span><h2>Eco Engineering – Proyek EDP</h2><p>Jadilah insinyur cilik yang merancang solusi lingkungan.</p></div><span class="tag">6 TAHAP EDP</span></div>
+ <div class="panel"><div class="lesson-img">🧑‍🔬🌱🛠️</div><h3>Misi Besar: Solusi Hijau di Sekitarku</h3><p>Pilih satu masalah lingkungan yang kamu temukan di rumah atau sekolah. Rancang solusi sederhana, terjangkau, aman, dan bermanfaat bagi lingkungan.</p><div class="callout">Contoh ide: penyiram tanaman tetes hemat air, filter penjernih air sederhana, taman vertikal dari botol bekas yang aman, atau penampung air hujan.</div>
+  <label class="label" for="edpProjectType">Pilih Proyek Rekayasa yang Dikerjakan</label>
+  <select id="edpProjectType" class="field" onchange="saveEDP()">
+   <option value="Penyiram Tetes Hemat Air">💧 Proyek 1: Penyiram Tetes Hemat Air</option>
+   <option value="Filter Air Sederhana">🚰 Proyek 2: Filter Air Sederhana (Penjernih Air)</option>
+  </select>
+  <label class="label">Masalah lingkungan yang ingin diselesaikan</label><textarea id="edpProblem" class="field" rows="2" placeholder="Contoh: tanaman di sudut sekolah sering kekurangan air atau air selokan keruh..."></textarea></div>
+ 
+ <div class="panel" id="engineeringLab">
+  <div class="between">
+   <div>
+    <span class="tag">LABORATORIUM REKAYASA 1</span>
+    <h3 style="margin:8px 0 4px">🧪 Eksperimen Rekayasa: Penyiram Tetes Hemat Air</h3>
+    <p class="smalltext">Rancang alat penyiram tetes agar tanaman mendapat air yang pas tanpa membuang-buang air.</p>
+   </div>
+   <div style="font-size:42px">💧🪴</div>
+  </div>
+
+  <div class="callout">
+   <b>🎯 Misi Tantangan Insinyur Cilik:</b><br>
+   • Tanaman membutuhkan air pas sebanyak <b>300 ml</b> (Kecukupan <b>95% – 100%</b>).<br>
+   • Usahakan air yang terbuang percuma (air berlebih) <b>kurang dari 80 ml</b>.<br>
+   • <b>Tips:</b> Kamu bisa menggeser posisi ember mendekati tanaman agar selang lebih pendek dan air mengalir lebih lancar!
+  </div>
+
+  <div class="sim-scene" id="engScene" style="height:265px;background:linear-gradient(#dff3f5 0 62%,#a6cf7c 62% 100%);margin:12px 0;overflow:hidden;touch-action:pan-y">
+   <div id="engStand" style="position:absolute;left:12%;bottom:38%;width:88px;height:40px;background:#8d6e63;border-radius:4px 4px 0 0;z-index:2;transition:height .2s"></div>
+   
+   <div style="position:absolute;right:8%;bottom:34px;text-align:center;z-index:2">
+    <div id="engPlantBadge" style="background:#fff;border:1px solid #cfe2d2;padding:3px 8px;border-radius:99px;font-size:10px;font-weight:800;margin-bottom:4px;box-shadow:0 2px 5px #0001">🌱 Menunggu Uji</div>
+    <div id="engPlantIcon" style="font-size:64px;transition:transform .3s" aria-label="Tanaman">🪴</div>
+   </div>
+
+   <svg id="engHoseSvg" viewBox="0 0 1000 265" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2">
+    <path id="engHosePath" d="M190 110 Q520 60 850 165" fill="none" stroke="#348da0" stroke-width="10" stroke-linecap="round"/>
+    <path id="engHoseFlow" d="M190 110 Q520 60 850 165" fill="none" stroke="#a6f0ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 14" opacity="0"/>
+   </svg>
+
+   <div id="engBucket" role="slider" aria-label="Geser ember ke kiri atau kanan" tabindex="0" style="position:absolute;left:12%;bottom:78px;width:88px;height:104px;z-index:3;cursor:grab;touch-action:none;user-select:none;filter:drop-shadow(0 5px 3px #3455);transition:bottom .2s">
+    <div style="position:absolute;left:8px;right:8px;top:10px;height:84px;border:5px solid #546e7a;border-top:7px solid #546e7a;border-radius:8px 8px 18px 18px;background:linear-gradient(90deg,#ffffff77,#ffffff18);overflow:hidden;clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)">
+     <div id="engWaterFill" style="position:absolute;bottom:0;left:0;right:0;height:50%;background:linear-gradient(#8ce4f1,#279cc3);transition:height .25s"></div>
+    </div>
+    <div style="position:absolute;left:0;right:0;top:0;height:17px;border:4px solid #546e7a;border-bottom:0;border-radius:50%"></div>
+    <div id="engBucketLabel" style="position:absolute;top:42px;left:0;right:0;text-align:center;font-size:11px;font-weight:900;color:#103c4a;text-shadow:0 1px 0 #fff">1000 ml</div>
+    <div style="position:absolute;top:-22px;left:-10px;right:-10px;text-align:center;font-size:10px;font-weight:800;background:#fff;border-radius:8px;padding:2px 4px;box-shadow:0 2px 4px #0002">↔ Geser Ember</div>
+   </div>
+
+   <div id="engDropAnim" style="position:absolute;right:14%;top:155px;z-index:4;display:none">
+    <span class="drip-drop" style="left:0;animation-delay:0s">💧</span>
+    <span class="drip-drop" style="left:14px;animation-delay:.4s">💧</span>
+   </div>
+
+   <div style="position:absolute;left:12px;top:10px;background:#ffffffeb;border-radius:9px;padding:6px 10px;font-size:11px;font-weight:800;z-index:5">📏 Tinggi Ember: <span id="engSceneHeight">50</span> cm • Jarak ke Tanaman: <span id="engSceneDist">Jauh</span></div>
+   <div style="position:absolute;right:12px;top:10px;background:#ffffffeb;border-radius:9px;padding:6px 10px;font-size:11px;font-weight:800;z-index:5">🎯 Target: 300 ml</div>
+  </div>
+
+  <div class="sim-controls">
+   <div class="control">
+    <label>🪣 1. Volume Air Awal <b id="engVolumeVal">1000 ml</b></label>
+    <small>Banyaknya air yang diisi ke dalam ember</small>
+    <input id="engVolume" type="range" min="300" max="2000" step="100" value="1000" oninput="syncEngineering()">
+   </div>
+   <div class="control">
+    <label>🕳️ 2. Jumlah Lubang Tetes <b id="engHolesVal">3 lubang</b></label>
+    <small>Makin banyak lubang, air menetes makin deras</small>
+    <input id="engHoles" type="range" min="1" max="8" value="3" oninput="syncEngineering()">
+   </div>
+   <div class="control">
+    <label>📐 3. Tinggi Posisi Ember <b id="engHeightVal">50 cm</b></label>
+    <small>Makin tinggi ember, dorongan air makin kuat</small>
+    <input id="engHeight" type="range" min="20" max="100" step="10" value="50" oninput="syncEngineering()">
+   </div>
+   <div class="control">
+    <label>⏱️ 4. Lama Penyiraman <b id="engTimeVal">30 menit</b></label>
+    <small>Berapa lama alat dibiarkan meneteskan air</small>
+    <input id="engTime" type="range" min="10" max="60" step="5" value="30" oninput="syncEngineering()">
+   </div>
+   <div class="control">
+    <label>🌱 5. Jenis Media Tanam <b id="engAbsorbVal">70% (Tanah Gembur)</b></label>
+    <small>Kemampuan tanah menahan air agar tidak langsung tumpah</small>
+    <input id="engAbsorb" type="range" min="30" max="100" step="5" value="70" oninput="syncEngineering()">
+   </div>
+  </div>
+
+  <div class="row" style="margin-top:14px">
+   <button class="btn" onclick="runEngineering()">▶ Uji Rancangan Sekarang</button>
+   <button class="btn outline" onclick="resetEngineering()">↻ Ulangi Pengaturan</button>
+   <span class="smalltext" id="engStatus">Atur 5 komponen di atas, lalu klik <b>Uji Rancangan</b>.</span>
+  </div>
+
+  <div class="grid three" style="margin-top:14px">
+   <div class="stat"><b id="engDelivered">—</b><span>💧 Air Keluar dari Selang (ml)</span></div>
+   <div class="stat"><b id="engUseful">—</b><span>🌱 Air Diminum Tanaman (Target: 300 ml)</span></div>
+   <div class="stat"><b id="engWaste">—</b><span>⚠️ Air Terbuang Percuma (Target: &lt;80 ml)</span></div>
+  </div>
+
+  <div style="margin-top:14px;background:#f5faf4;padding:12px;border-radius:12px;border:1px solid var(--line)">
+   <div class="between"><b class="smalltext">Tingkat Kecukupan Air Tanaman (Target 100%)</b><b id="engPercent" style="color:var(--forest)">—</b></div>
+   <div class="bar" style="margin-top:6px"><span id="engBar" style="width:0%"></span></div>
+  </div>
+
+  <div class="callout" id="engFeedback">💡 <b>Hasil Analisis Alat:</b> Atur komponen di atas dan geser posisi ember, lalu tekan tombol <b>▶ Uji Rancangan Sekarang</b> untuk melihat apakah tanamanmu tumbuh segar atau malah kebanjiran!</div>
+  
+  <div class="row">
+   <button class="btn small outline" onclick="saveEngineeringResult()">📋 Masukkan Hasil Uji ke Tahap 5 (TEST)</button>
+   <span class="smalltext" id="engSaved">Klik tombol di samping untuk otomatis mencatat bukti ke jurnal EDP.</span>
+  </div>
+ </div>
+
+ <div class="panel" id="waterFilterLab">
+  <div class="between">
+   <div>
+    <span class="tag">LABORATORIUM REKAYASA 2</span>
+    <h3 style="margin:8px 0 4px">🚰 Eksperimen Rekayasa: Filter Air Sederhana</h3>
+    <p class="smalltext">Susun ketebalan 4 lapisan penyaring alami untuk menjernihkan air tercemar agar ekosistem air kembali sehat.</p>
+   </div>
+   <div style="font-size:42px">🪨⏳⚫</div>
+  </div>
+
+  <div class="callout">
+   <b>🎯 Misi Tantangan Insinyur Cilik:</b><br>
+   • Capai tingkat kejernihan air <b>minimal 85%</b> dan turunkan sisa bau/zat pencemar hingga <b>≤ 15%</b>.<br>
+   • <b>Fungsi Lapisan:</b> <b>Kerikil</b> (menyaring sampah kasar), <b>Pasir Halus</b> (menahan lumpur keruh), <b>Arang Aktif</b> (menyerap bau & sabun), dan <b>Kapas/Spons</b> di dasar botol (menyaring partikel paling halus).
+  </div>
+
+  <div class="preset-bar">
+   <span class="smalltext"><b>Pilih Sumber Air Tercemar:</b></span>
+   <button type="button" class="preset-btn" onclick="setFilterSource('muddy')">🟤 Air Sungai Berlumpur</button>
+   <button type="button" class="preset-btn" onclick="setFilterSource('soap')">🫧 Air Limbah Sabun & Bau</button>
+   <button type="button" class="preset-btn" onclick="setFilterSource('leaves')">🍂 Air Kolam Berdaun</button>
+  </div>
+
+  <div class="sim-scene" style="height:260px;background:linear-gradient(#e7f5f6 0 68%,#b5d692 68% 100%);margin:12px 0;padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center">
+   <div style="text-align:center">
+    <div style="font-size:11px;font-weight:800;color:#20352b;margin-bottom:6px">Tabung Filter 4 Lapisan</div>
+    <div style="width:124px;margin:0 auto;border:4px solid #486858;border-top:0;border-radius:6px 6px 20px 20px;overflow:hidden;background:#ffffffbb;box-shadow:0 6px 14px #0001">
+     <div id="wfTopWater" style="height:26px;background:#8d6e63;color:#fff;font-size:10px;font-weight:800;display:grid;place-items:center;transition:.3s">Air Sungai Keruh</div>
+     <div id="wfLayerGravel" style="height:24px;background:repeating-radial-gradient(circle,#9e9e9e 0 3px,#bdbdbd 3px 6px);color:#222;font-size:10px;font-weight:800;display:grid;place-items:center;transition:.3s">Kerikil</div>
+     <div id="wfLayerSand" style="height:24px;background:#e6c88a;color:#4b3b13;font-size:10px;font-weight:800;display:grid;place-items:center;transition:.3s">Pasir Halus</div>
+     <div id="wfLayerCharcoal" style="height:24px;background:#37474f;color:#fff;font-size:10px;font-weight:800;display:grid;place-items:center;transition:.3s">Arang Aktif</div>
+     <div id="wfLayerCotton" style="height:22px;background:#fbfdf9;color:#333;font-size:10px;font-weight:800;display:grid;place-items:center;border-top:1px dashed #ccc;transition:.3s">Kapas/Spons</div>
+    </div>
+   </div>
+
+   <div style="text-align:center">
+    <div style="font-size:11px;font-weight:800;color:#20352b;margin-bottom:6px">Wadah Air Hasil Saringan</div>
+    <div style="width:140px;height:132px;margin:0 auto;border:4px solid #486858;border-top:0;border-radius:6px 6px 18px 18px;overflow:hidden;background:#ffffffbb;display:flex;align-items:flex-end;box-shadow:0 6px 14px #0001">
+     <div id="wfResultWater" style="width:100%;height:78%;background:#9e826c;transition:background .5s;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px">
+      <div id="wfFishEmoji" style="font-size:30px">🐟</div>
+      <span id="wfWaterLabel" style="font-size:10px;font-weight:800;color:#fff;text-shadow:0 1px 2px #0006">Belum Disaring</span>
+     </div>
+    </div>
+    <div style="font-size:11px;font-weight:800;margin-top:6px;color:var(--forest)" id="wfSourceTag">Sumber: Air Sungai Berlumpur</div>
+   </div>
+  </div>
+
+  <div class="sim-controls">
+   <div class="control">
+    <label>🪨 1. Kerikil (Atas) <b id="wfGravelVal">2 cm</b></label>
+    <small>Menahan daun, ranting, dan kotoran besar</small>
+    <input id="wfGravel" type="range" min="0" max="5" value="2" oninput="syncWaterFilter()">
+   </div>
+   <div class="control">
+    <label>⏳ 2. Pasir Halus <b id="wfSandVal">3 cm</b></label>
+    <small>Menyaring endapan lumpur penyebab keruh</small>
+    <input id="wfSand" type="range" min="0" max="5" value="3" oninput="syncWaterFilter()">
+   </div>
+   <div class="control">
+    <label>⚫ 3. Arang Aktif <b id="wfCharcoalVal">2 cm</b></label>
+    <small>Menyerap bau, warna, dan zat limbah sabun</small>
+    <input id="wfCharcoal" type="range" min="0" max="5" value="2" oninput="syncWaterFilter()">
+   </div>
+   <div class="control">
+    <label>☁️ 4. Kapas / Spons (Bawah) <b id="wfCottonVal">2 cm</b></label>
+    <small>Penyaring akhir kotoran halus & penahan pasir</small>
+    <input id="wfCotton" type="range" min="0" max="5" value="2" oninput="syncWaterFilter()">
+   </div>
+  </div>
+
+  <div class="row" style="margin-top:14px">
+   <button type="button" class="btn" onclick="runWaterFilter()">▶ Uji Penyaringan Air</button>
+   <button type="button" class="btn outline" onclick="resetWaterFilter()">↻ Ulangi Filter</button>
+   <span class="smalltext" id="wfStatus">Atur 4 lapisan penyaring di atas, lalu klik <b>Uji Penyaringan Air</b>.</span>
+  </div>
+
+  <div class="grid three" style="margin-top:14px">
+   <div class="stat"><b id="wfClarityStat">—</b><span>💎 Tingkat Kejernihan (Target ≥85%)</span></div>
+   <div class="stat"><b id="wfToxinStat">—</b><span>🧪 Sisa Bau & Racun (Target ≤15%)</span></div>
+   <div class="stat"><b id="wfEcoHealthStat">—</b><span>🐟 Kondisi Ekosistem Air</span></div>
+  </div>
+
+  <div class="callout" id="wfFeedback">💡 <b>Hasil Analisis Filter Air:</b> Susun ketebalan lapisan kerikil, pasir, arang, dan kapas di atas, lalu tekan tombol <b>▶ Uji Penyaringan Air</b>!</div>
+
+  <div class="row">
+   <button type="button" class="btn small outline" onclick="saveWaterFilterResult()">📋 Masukkan Hasil Uji Filter ke Tahap 5 (TEST)</button>
+   <button type="button" class="btn small outline" onclick="askGemaWithPrompt('Bagaimana urutan lapisan filter air sederhana yang paling efektif dan apa fungsi arang aktif?')">🦋 Tanya Lala tentang Filter Air</button>
+   <span class="smalltext" id="wfSaved">Klik tombol di samping untuk mencatat hasil filter air ke jurnal EDP.</span>
+  </div>
+ </div>
+
+ <div class="panel">
+  <h3>📘 Jurnal 6 Tahap Engineering Design Process (EDP)</h3>
+  <div class="edp-step"><div class="edp-num">1</div><div><h4>ASK — Bertanya & Identifikasi Masalah</h4><p>Apa kebutuhan tanaman atau lingkungan yang harus dipenuhi dan batasannya?</p><textarea class="field edp-input" rows="2" placeholder="Tuliskan hasil tahap ASK..."></textarea></div></div>
+  <div class="edp-step"><div class="edp-num">2</div><div><h4>IMAGINE — Membayangkan Ide Solusi</h4><p>Tuliskan minimal 2 ide alat atau cara penyelesaian yang ramah lingkungan.</p><textarea class="field edp-input" rows="2" placeholder="Tuliskan ide-ide solusimu..."></textarea></div></div>
+  <div class="edp-step"><div class="edp-num">3</div><div><h4>PLAN — Merencanakan Desain & Bahan</h4><p>Bahan bekas/aman apa saja yang dibutuhkan serta ukuran rancanganmu?</p><textarea class="field edp-input" rows="2" placeholder="Tuliskan daftar bahan dan langkah pembuatan..."></textarea></div></div>
+  <div class="edp-step"><div class="edp-num">4</div><div><h4>CREATE — Membuat Prototipe</h4><p>Jelaskan proses pembuatan model/prototipe penyiram hemat air atau filter air pilihanmu.</p><textarea class="field edp-input" rows="2" placeholder="Ceritakan proses pembuatan prototipemu..."></textarea></div></div>
+  <div class="edp-step"><div class="edp-num">5</div><div><h4>TEST — Menguji Rancangan</h4><p>Catat hasil pengujian dari Laboratorium Rekayasa di atas atau uji coba langsung.</p><textarea id="edp5" class="field edp-input" rows="2" placeholder="Tuliskan hasil pengujian alat..."></textarea></div></div>
+  <div class="edp-step"><div class="edp-num">6</div><div><h4>IMPROVE — Memperbaiki Rancangan</h4><p>Bagian mana yang perlu diperbaiki agar alat lebih hemat air / lebih jernih dan efektif?</p><textarea class="field edp-input" rows="2" placeholder="Tuliskan rencana perbaikanmu..."></textarea></div></div>
+  <div class="row" style="margin-top:14px">
+   <button class="btn" onclick="saveEDP()">💾 Simpan Jurnal EDP</button>
+   <button class="btn outline small" onclick="shareWorkToCollab('edp')">💬 Bagikan Proyek Penyiram Air</button>
+   <button class="btn outline small" onclick="shareWorkToCollab('filter')">🚰 Bagikan Proyek Filter Air</button>
+   <button class="btn outline small" onclick="askGemaWithPrompt('Bantu aku mengecek ide proyek EDP dan memberi saran perbaikan untuk alat penyiram tetes atau filter air!')">🦋 Minta Bantuan Lala</button>
+   <span class="smalltext" id="edpStatus"></span>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="page-quiz">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 07 • EVALUASI</span><h2>Evaluasi Akhir Harmoni Ekosistem</h2><p>Uji pemahamanmu melalui 10 soal pilihan ganda.</p></div><span class="badge-score" id="quizLiveScore">Skor: 0</span></div>
+ <div class="panel">
+  <div class="between"><b id="quizCounter">Soal 1 dari 10</b><button class="btn outline small" onclick="restartQuiz()">↻ Ulangi Kuis</button></div>
+  <div class="bar" style="margin:10px 0 16px"><span id="quizBar"></span></div>
+  <h3 id="quizQuestion" style="line-height:1.5">Memuat soal...</h3>
+  <div id="quizOptions"></div>
+  <div id="quizFeedback"></div>
+  <div class="row" style="margin-top:14px">
+   <button class="btn" id="quizNext" onclick="nextQuiz()" disabled>Soal Berikutnya →</button>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="page-reflection">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 08 • REFLEKSI DIRI</span><h2>Refleksi Petualang Ekosistem</h2><p>Renungkan pengalaman belajarmu selama menjelajahi EcoQuest.</p></div><span class="tag">JURNAL REFLEKSI</span></div>
+ <div class="panel">
+  <label class="label">Bagaimana perasaanmu setelah mempelajari Harmoni dalam Ekosistem?</label>
+  <div class="row" style="margin:8px 0 12px">
+   <label class="chip"><input type="radio" name="mood" value="Sangat Senang & Paham"> 😄 Sangat Senang & Paham</label>
+   <label class="chip"><input type="radio" name="mood" value="Tertantang"> 🤔 Tertantang</label>
+   <label class="chip"><input type="radio" name="mood" value="Perlu Belajar Lagi"> 📚 Perlu Belajar Lagi</label>
+  </div>
+  <label class="label">1. Hal baru apa yang paling menarik yang kamu pelajari hari ini?</label>
+  <textarea class="field reflection-input" rows="2" placeholder="Tuliskan jawabanmu..."></textarea>
+  <label class="label">2. Bagian misi atau percobaan mana yang paling menantang bagimu?</label>
+  <textarea class="field reflection-input" rows="2" placeholder="Tuliskan jawabanmu..."></textarea>
+  <label class="label">3. Bagaimana hasil percobaan Eco-Sim, Penyiram Tetes, dan Filter Air membantumu memahami alam?</label>
+  <textarea class="field reflection-input" rows="2" placeholder="Tuliskan jawabanmu..."></textarea>
+  <label class="label">4. Satu aksi nyata apa yang akan kamu lakukan untuk menjaga ekosistem di rumah atau sekolah?</label>
+  <textarea class="field reflection-input" rows="2" placeholder="Tuliskan aksi nyatamu..."></textarea>
+  <div class="row" style="margin-top:14px">
+   <button class="btn" onclick="saveReflection()">💾 Simpan Refleksi</button>
+   <span class="smalltext" id="reflectionStatus"></span>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="page-collab">
+ <div class="section-head">
+  <div>
+   <span class="eyebrow" style="color:var(--forest)">ZONA 10 • KOMUNIKASI & KOLABORASI</span>
+   <h2>Forum Diskusi & Umpan Balik Kelas</h2>
+   <p>Berbagi temuan ekosistem, saling memberi masukan antar siswa, dan terima umpan balik langsung dari guru.</p>
+  </div>
+  <span class="tag" id="collabSyncBadge">💬 MODE LOKAL</span>
+ </div>
+
+ <div class="panel">
+  <h3>✍️ Kirim Temuan, Pertanyaan, atau Umpan Balik</h3>
+  <div class="two-col">
+   <div>
+    <label class="label" for="collabRole">Peran Pengirim</label>
+    <select class="field" id="collabRole" onchange="toggleTeacherPinBox()">
+     <option value="siswa">👦 Peserta Didik (Siswa)</option>
+     <option value="guru">👩‍🏫 Guru Pendamping</option>
+    </select>
+   </div>
+   <div>
+    <label class="label" for="collabAuthorName">Nama Pengirim</label>
+    <input class="field" id="collabAuthorName" placeholder="Otomatis terisi dari Beranda atau ketik namamu">
+   </div>
+  </div>
+  <div id="teacherPinWrap" class="hidden" style="margin-top:8px">
+   <label class="label" for="teacherPinInput">Kode Verifikasi Guru (Opsional — untuk lencana resmi Guru)</label>
+   <input class="field" id="teacherPinInput" type="password" placeholder="Masukkan kode guru">
+  </div>
+  <label class="label" for="collabTopic">Kategori Topik</label>
+  <select class="field" id="collabTopic">
+   <option value="🔬 Hasil Eksperimen Eco-Sim & CER">🔬 Hasil Eksperimen Eco-Sim & CER</option>
+   <option value="🛠️ Ide Proyek Penyiram Tetes (EDP)">🛠️ Ide Proyek Penyiram Tetes (EDP)</option>
+   <option value="🚰 Ide Proyek Filter Air Sederhana (EDP)">🚰 Ide Proyek Filter Air Sederhana (EDP)</option>
+   <option value="❓ Pertanyaan Materi Ekosistem">❓ Pertanyaan Materi Ekosistem</option>
+   <option value="🌟 Umpan Balik & Apresiasi Guru">🌟 Umpan Balik & Apresiasi Guru</option>
+  </select>
+  <label class="label" for="collabMessage">Isi Pesan / Temuan / Umpan Balik</label>
+  <textarea class="field" id="collabMessage" rows="3" placeholder="Tuliskan hasil pengamatanmu, ide rancangan alat penyiram air / filter air, atau berikan umpan balik membangun untuk temanmu..."></textarea>
+  <div class="row" style="margin-top:12px">
+   <button class="btn" onclick="submitCollabPost()">📤 Kirim ke Papan Diskusi</button>
+   <button class="btn outline small" onclick="shareWorkToCollab('cer', true)">📋 Tempel Bukti CER</button>
+   <button class="btn outline small" onclick="shareWorkToCollab('edp', true)">💧 Tempel Proyek Penyiram Air</button>
+   <button class="btn outline small" onclick="shareWorkToCollab('filter', true)">🚰 Tempel Proyek Filter Air</button>
+  </div>
+ </div>
+
+ <div class="panel">
+  <div class="between" style="margin-bottom:12px;flex-wrap:wrap">
+   <div>
+    <h3 style="margin:0">📌 Papan Diskusi & Umpan Balik</h3>
+    <p class="smalltext" style="margin:3px 0 0">Klik tombol balas di setiap kartu untuk berdiskusi langsung.</p>
+   </div>
+   <div class="row">
+    <select class="field" id="collabFilter" style="width:auto;padding:7px 11px;font-size:12px" onchange="renderCollabPosts()">
+     <option value="all">Semua Kiriman</option>
+     <option value="guru">Umpan Balik Guru</option>
+     <option value="siswa">Kiriman Siswa</option>
+     <option value="penyiram">Proyek Penyiram Air</option>
+     <option value="filter">Proyek Filter Air</option>
+    </select>
+    <button class="btn outline small" type="button" style="color:#a45b48;border-color:#e6c4bb" onclick="toggleResetCollabModal(true)">🧹 Bersihkan Diskusi (Guru)</button>
+   </div>
+  </div>
+  <!-- Kotak Konfirmasi Reset Papan Diskusi Khusus Guru (Tanpa confirm/alert browser) -->
+  <div id="resetCollabBox" class="callout danger hidden" style="margin-bottom:14px">
+   <b>🧹 Reset Papan Diskusi untuk Kelas / Tahun Ajaran Baru</b>
+   <p class="smalltext" style="margin:4px 0 8px">Tindakan ini akan menghapus seluruh kiriman siswa & balasan yang ada saat ini agar papan diskusi kembali bersih untuk kelas baru. Masukkan kode guru untuk melanjutkan:</p>
+   <div class="row">
+    <input class="field" id="resetCollabPinInput" type="password" placeholder="Masukkan kode guru" style="max-width:230px">
+    <button class="btn small" type="button" style="background:#b44933" onclick="executeResetCollabBoard()">Ya, Bersihkan Semua</button>
+    <button class="btn outline small" type="button" onclick="toggleResetCollabModal(false)">Batal</button>
+   </div>
+  </div>
+  <div id="collabFeed"></div>
+ </div>
+</section>
+
+<section class="page" id="page-dashboard">
+ <div class="section-head"><div><span class="eyebrow" style="color:var(--forest)">ZONA 09 • CAPAIAN BELAJAR</span><h2>Dashboard Capaian & Laporan</h2><p>Pantau progres belajarmu dan kirimkan laporan ke guru.</p></div><span class="badge-score" id="dashPercent">0% selesai</span></div>
+ <div class="panel">
+  <div class="between">
+   <div><h3 id="dashName" style="margin:0">Belum diisi</h3><p class="smalltext" id="dashClass" style="margin:4px 0 0">Kelas —</p></div>
+   <div class="row">
+    <button class="btn small" onclick="downloadProgressPng()">🖼️ Unduh Kartu PNG</button>
+    <button class="btn outline small" onclick="exportReport()">📄 Unduh Laporan TXT</button>
+   </div>
+  </div>
+  <div class="bar" style="margin-top:14px"><span id="dashBar"></span></div>
+  <div class="grid three" style="margin-top:15px">
+   <div class="stat"><b id="dashQuiz">—</b><span>📝 Nilai Evaluasi Akhir</span></div>
+   <div class="stat"><b id="dashArcade">0</b><span>🕹️ Total Poin Eco Arcade</span></div>
+   <div class="stat"><b id="dashPuzzle">0/10</b><span>🧩 Puzzle Biotik-Abiotik</span></div>
+  </div>
+ </div>
+
+ <div class="two-col">
+  <div class="panel">
+   <h3>🏅 Daftar Misi Selesai</h3>
+   <div id="achievementList"></div>
+  </div>
+  <div class="panel">
+   <h3>📲 Kirim Laporan ke WhatsApp Guru</h3>
+   <label class="label" for="teacherWa">Nomor WhatsApp Guru (opsional)</label>
+   <input class="field" id="teacherWa" placeholder="Contoh: 081234567890" oninput="saveWaNumber()">
+   <label class="label" for="waPreview">Pratinjau Pesan Laporan</label>
+   <textarea class="field" id="waPreview" rows="8" readonly></textarea>
+   <div class="row" style="margin-top:12px">
+    <button class="btn" onclick="sendToTeacherWa()">📤 Kirim via WhatsApp</button>
+    <button class="btn outline small" onclick="copyWaSummary()">📋 Salin Teks</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer class="footer">EcoQuest — E-Modul Interaktif IPAS Kelas V SD • Harmoni dalam Ekosistem</footer>
+</main>
+</div>
+
+<!-- === CHATBOT LALA FLOATING WIDGET === -->
+<button class="gema-fab" type="button" onclick="toggleGemaChat()" aria-label="Buka asisten belajar Lala">
+ <div class="gema-fab-avatar" id="gemaFabAvatar">🦋</div>
+ <div class="gema-fab-text">
+  <b>Tanya Lala 🦋</b>
+  <span>Sahabat Penjelajah IPAS</span>
+ </div>
+ <span class="gema-pulse"></span>
+</button>
+
+<aside class="gema-window closed" id="gemaWindow" aria-label="Jendela obrolan Lala">
+ <div class="gema-head">
+  <div class="gema-head-info">
+   <div class="gema-head-avatar" id="gemaHeadAvatar">🦋</div>
+   <div>
+    <b style="font-size:14px;display:block">Lala • Kupu-Kupu Penjelajah</b>
+    <span style="font-size:11px;color:#d7f3ce">Siap menemanimu menjelajahi ekosistem!</span>
+   </div>
+  </div>
+  <div class="gema-head-actions">
+   <button class="gema-icon-btn" type="button" onclick="clearGemaChat()" title="Mulai ulang obrolan">↻</button>
+   <button class="gema-icon-btn" type="button" onclick="toggleGemaChat(false)" title="Tutup chat">✕</button>
+  </div>
+ </div>
+ <div class="gema-messages" id="gemaMessages"></div>
+ <div class="gema-chips">
+  <button class="gema-chip" type="button" onclick="askGemaWithPrompt('Apa perbedaan komponen biotik dan abiotik?')">🌱 Biotik vs Abiotik</button>
+  <button class="gema-chip" type="button" onclick="askGemaWithPrompt('Jelaskan contoh rantai makanan di hutan!')">🦊 Rantai Makanan</button>
+  <button class="gema-chip" type="button" onclick="askGemaWithPrompt('Bagaimana urutan lapisan filter air sederhana yang paling efektif?')">🚰 Tips Filter Air</button>
+  <button class="gema-chip" type="button" onclick="askGemaWithPrompt('Bagaimana cara agar eksperimen Penyiram Tetes berhasil?')">💧 Tips Penyiram Tetes</button>
+  <button class="gema-chip" type="button" onclick="askGemaWithPrompt('Bantu aku memahami grafik di Eco-Sim Virtual Lab!')">🧪 Tanya Eco-Sim</button>
+ </div>
+ <form class="gema-input-bar" onsubmit="handleGemaSubmit(event)">
+  <input class="gema-input" id="gemaInput" placeholder="Tulis pertanyaanmu untuk Lala..." autocomplete="off">
+  <button class="gema-send" id="gemaSendBtn" type="submit">Kirim ➤</button>
+ </form>
+</aside>
+
+<div class="toast" id="toast"></div>
+</div>
+
+<script>
+function handleAssetVideoError(){
+ const placeholder = document.getElementById('videoPlaceholder');
+ const localVid = document.getElementById('lessonLocalVideo');
+ if(localVid) localVid.classList.add('hidden');
+ if(placeholder) placeholder.classList.remove('hidden');
+}
+
+const KEY = 'ecoquest_v5_state';
+const COLLAB_KEY = 'ecoquest_collab_posts_v1';
+const defaults = {
+ name: '',
+ kelas: '',
+ teacherWa: '',
+ done: [],
+ puzzle: 0,
+ lab: null,
+ cer: { claim: '', evidence: '', reason: '' },
+ arcade: {},
+ engineering: null,
+ waterFilter: null,
+ edp: { projectType: 'Penyiram Tetes Hemat Air', problem: '', s1: '', s2: '', s3: '', s4: '', s5: '', s6: '' },
+ quiz: null,
+ reflection: { mood: '', r1: '', r2: '', r3: '', r4: '' }
+};
+
+let data = { ...defaults };
+try {
+ const saved = JSON.parse(localStorage.getItem(KEY) || 'null');
+ if (saved && typeof saved === 'object') {
+  data = {
+   ...defaults,
+   ...saved,
+   done: Array.isArray(saved.done) ? saved.done : [],
+   cer: { ...defaults.cer, ...(saved.cer || {}) },
+   arcade: { ...(saved.arcade || {}) },
+   edp: { ...defaults.edp, ...(saved.edp || {}) },
+   reflection: { ...defaults.reflection, ...(saved.reflection || {}) }
+  };
+ }
+} catch (e) {
+ data = { ...defaults };
+}
+
+function saveData(){localStorage.setItem(KEY,JSON.stringify(data));updateDashboard()}
+function go(p){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('page-'+p).classList.add('active');document.querySelectorAll('.nav[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===p));toggleMenu(false);if(p==='dashboard')updateDashboard();if(p==='edp')setTimeout(updateEngineeringHose,60);window.scrollTo({top:0,behavior:'smooth'})}
+function toggleMenu(force){const sb=document.getElementById('sidebar'),bd=document.getElementById('sidebarBackdrop');const open=typeof force==='boolean'?force:!sb.classList.contains('open');sb.classList.toggle('open',open);if(bd)bd.classList.toggle('show',open)}
+function mark(s){if(!data.done.includes(s))data.done.push(s);saveData()}
+function saveIdentity(){data.name=document.getElementById('studentName').value.trim();data.kelas=document.getElementById('studentClass').value.trim();saveData();document.getElementById('identityStatus').textContent='Identitas tersimpan ✓';toast('Identitas berhasil disimpan')}
+function saveWaNumber(){data.teacherWa=document.getElementById('teacherWa').value.trim();saveData()}
+function toast(msg){const t=document.getElementById('toast');if(!t)return;t.textContent=msg;t.classList.add('show');clearTimeout(window._toastTimer);window._toastTimer=setTimeout(()=>t.classList.remove('show'),2600)}
+
+/* === CHATBOT LALA (AVATAR + OFFLINE KNOWLEDGE BASE) === */
+const lalaFallbackSvg = `<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="60" fill="#e8f5e9"/>
+  <path d="M56 58 C24 22, 6 32, 16 64 C22 76, 40 74, 56 66 Z" fill="#ff9800" stroke="#2c1e16" stroke-width="4"/>
+  <path d="M56 66 C26 70, 18 96, 36 102 C48 104, 54 86, 56 72 Z" fill="#29b6f6" stroke="#2c1e16" stroke-width="4"/>
+  <path d="M64 58 C96 22, 114 32, 104 64 C98 76, 80 74, 64 66 Z" fill="#ff9800" stroke="#2c1e16" stroke-width="4"/>
+  <path d="M64 66 C94 70, 102 96, 84 102 C72 104, 66 86, 64 72 Z" fill="#29b6f6" stroke="#2c1e16" stroke-width="4"/>
+  <path d="M53 30 Q44 14 36 14" fill="none" stroke="#6d4c41" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="35" cy="14" r="4.5" fill="#ffca28"/>
+  <path d="M67 30 Q76 14 84 14" fill="none" stroke="#6d4c41" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="85" cy="14" r="4.5" fill="#ffca28"/>
+  <path d="M44 74 L76 74 L80 104 L40 104 Z" fill="#e6c88a"/>
+  <path d="M45 73 Q60 83 75 73 L71 82 Q60 88 49 82 Z" fill="#43a047"/>
+  <circle cx="60" cy="52" r="21" fill="#ffd6a5"/>
+  <path d="M35 42 C35 24, 85 24, 85 42 Z" fill="#d7b377"/>
+  <ellipse cx="60" cy="42" rx="28" ry="6" fill="#c59b5f"/>
+  <path d="M55 33 Q60 26 65 33 Q60 37 55 33 Z" fill="#55a96d"/>
+  <circle cx="52" cy="52" r="4.8" fill="#3e2723"/><circle cx="53.5" cy="50.5" r="1.8" fill="#fff"/>
+  <circle cx="68" cy="52" r="4.8" fill="#3e2723"/><circle cx="69.5" cy="50.5" r="1.8" fill="#fff"/>
+  <path d="M53 61 Q60 68 67 61" fill="none" stroke="#5d4037" stroke-width="2.5" stroke-linecap="round"/>
+</svg>`;
+
+let gemaOpen = false;
+let gemaBusy = false;
+
+function initLalaAvatars() {
+ const imgHtml = `<img src="Lala the Butterfly Explorer.png" alt="Lala Kupu-Kupu Penjelajah" onerror="this.outerHTML=lalaFallbackSvg">`;
+ const fab = document.getElementById('gemaFabAvatar');
+ const head = document.getElementById('gemaHeadAvatar');
+ if (fab) fab.innerHTML = imgHtml;
+ if (head) head.innerHTML = imgHtml;
+}
+
+function escapeHtml(str) {
+ return String(str || '')
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;');
+}
+
+function formatBotText(txt) {
+ return escapeHtml(txt)
+  .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+  .replace(/\n/g, '<br>');
+}
+
+function appendGemaMessage(sender, text) {
+ const box = document.getElementById('gemaMessages');
+ if (!box) return;
+ const div = document.createElement('div');
+ div.className = 'gema-msg ' + sender;
+ div.innerHTML = sender === 'bot' ? formatBotText(text) : escapeHtml(text);
+ box.appendChild(div);
+ box.scrollTop = box.scrollHeight;
+}
+
+function initGemaChat() {
+ initLalaAvatars();
+ const box = document.getElementById('gemaMessages');
+ if (box && box.children.length === 0) {
+  const sapaanNama = data.name ? `Halo **${data.name}**!` : 'Halo Penjelajah Cilik!';
+  appendGemaMessage('bot', `${sapaanNama} Aku **Lala**, Kupu-Kupu Penjelajah sahabat belajarmu! 🦋🌿\n\nTanyakan apa saja tentang **ekosistem, rantai makanan, simbiosis, Eco-Sim**, atau proyek **Penyiram Tetes & Filter Air EDP**!`);
+ }
+}
+
+function toggleGemaChat(force) {
+ const win = document.getElementById('gemaWindow');
+ if (!win) return;
+ gemaOpen = typeof force === 'boolean' ? force : !gemaOpen;
+ win.classList.toggle('closed', !gemaOpen);
+ if (gemaOpen) {
+  initGemaChat();
+  const inp = document.getElementById('gemaInput');
+  if (inp) setTimeout(() => inp.focus(), 120);
+ }
+}
+
+function clearGemaChat() {
+ const box = document.getElementById('gemaMessages');
+ if (box) box.innerHTML = '';
+ initGemaChat();
+ toast('Obrolan dengan Lala dimulai ulang.');
+}
+
+function askGemaWithPrompt(promptText) {
+ toggleGemaChat(true);
+ const inp = document.getElementById('gemaInput');
+ if (inp) inp.value = promptText;
+ handleGemaSubmit({ preventDefault: () => {} });
+}
+
+const lalaKnowledgeBase = [
+ { keys: ['halo', 'hai', 'assalamualaikum', 'pagi', 'siang', 'sore', 'siapa kamu', 'kenalan'], ans: 'Halo! Aku **Lala**, kupu-kupu penjelajah yang siap menemanimu belajar IPAS Kelas V tentang **Harmoni dalam Ekosistem**! 🦋 Mau bertanya tentang materi, Eco-Sim, Penyiram Tetes, atau Filter Air?' },
+ { keys: ['video', 'tonton', 'poin paling penting'], ans: '🎬 **Poin Penting Video Harmoni Ekosistem:**\n1. Ekosistem terdiri dari makhluk hidup (**biotik**) dan benda tak hidup (**abiotik**) yang saling bergantung.\n2. Energi mengalir dari matahari → produsen (tumbuhan) → konsumen → pengurai.\n3. Jika satu komponen terganggu, seluruh keseimbangan ekosistem ikut berubah!' },
+ { keys: ['biotik', 'abiotik', 'perbedaan komponen'], ans: '🌱 **Perbedaan Biotik & Abiotik:**\n• **Biotik** = semua makhluk hidup (pohon, rumput, kelinci, ikan, burung, jamur, bakteri).\n• **Abiotik** = benda/faktor tak hidup yang memengaruhi kehidupan (cahaya matahari, air, udara, tanah, batu, suhu).' },
+ { keys: ['produsen', 'konsumen', 'pengurai', 'dekomposer', 'peran'], ans: '🔄 **Peran Makhluk Hidup di Ekosistem:**\n• **Produsen:** Tumbuhan hijau yang membuat makanan sendiri lewat fotosintesis.\n• **Konsumen:** Hewan pemakan tumbuhan (herbivor), pemakan daging (karnivor), atau pemakan keduanya (omnivor).\n• **Pengurai (Dekomposer):** Jamur dan bakteri yang menguraikan sisa makhluk hidup menjadi zat hara penyubur tanah.' },
+ { keys: ['fotosintesis', 'klorofil', 'membuat makanan'], ans: '☀️ **Fotosintesis** adalah proses tumbuhan hijau membuat makanannya sendiri menggunakan **cahaya matahari, air (H₂O), dan karbon dioksida (CO₂)** dengan bantuan zat hijau daun (**klorofil**). Hasilnya adalah makanan (glukosa) dan **oksigen (O₂)** yang kita hirup!' },
+ { keys: ['rantai makanan', 'urutan makan', 'panah'], ans: '🦊 **Rantai Makanan** adalah peristiwa makan dan dimakan dengan urutan tertentu.\nContoh di hutan: **Rumput → Kelinci → Rubah → Jamur (Pengurai)**.\nTanda panah (**→**) artinya *"dimakan oleh"* sekaligus menunjukkan **arah perpindahan energi**!' },
+ { keys: ['jaring-jaring', 'jaring makanan'], ans: '🕸️ **Jaring-Jaring Makanan** adalah gabungan dari beberapa rantai makanan yang saling berhubungan di suatu ekosistem. Karena satu hewan bisa memakan lebih dari satu jenis makanan, jaring-jaring makanan membuat ekosistem lebih stabil!' },
+ { keys: ['piramida', 'aliran energi', 'trofik'], ans: '🔺 **Piramida Energi:** Semakin tinggi tingkatannya dalam rantai makanan, jumlah energi dan populasinya semakin mengecil. Oleh karena itu, jumlah tumbuhan (produsen) harus jauh lebih banyak daripada kelinci, dan kelinci lebih banyak daripada rubah.' },
+ { keys: ['simbiosis', 'mutualisme', 'komensalisme', 'parasitisme'], ans: '🤝 **3 Jenis Simbiosis:**\n1. **Mutualisme** (saling untung): Lebah dan bunga, atau kerbau dan burung jalak.\n2. **Komensalisme** (satu untung, satu tidak dirugikan): Anggrek menempel di pohon mangga.\n3. **Parasitisme** (satu untung, satu dirugikan): Benalu pada pohon inang, atau nyamuk pada manusia.' },
+ { keys: ['predasi', 'kompetisi', 'pemangsa'], ans: '🦁 **Predasi & Kompetisi:**\n• **Predasi:** Hubungan pemangsa (predator) dan mangsa, misalnya rubah memangsa kelinci.\n• **Kompetisi:** Persaingan antar makhluk hidup memperebutkan sumber daya yang terbatas (misalnya dua pohon bersaing mendapat cahaya matahari).' },
+ { keys: ['individu', 'populasi', 'komunitas', 'habitat', 'satuan'], ans: '🌍 **Satuan Makhluk Hidup:**\n• **Individu:** 1 makhluk hidup tunggal (seekor kelinci).\n• **Populasi:** Kumpulan individu sejenis di satu tempat (10 ekor kelinci).\n• **Komunitas:** Kumpulan berbagai populasi yang hidup bersama di suatu wilayah.\n• **Habitat:** Tempat tinggal alami makhluk hidup.' },
+ { keys: ['alami', 'buatan', 'jenis ekosistem', 'sawah', 'hutan', 'kolam'], ans: '🏞️ **Jenis Ekosistem:**\n• **Ekosistem Alami:** Terbentuk secara alami tanpa campur tangan manusia (hutan, sungai, laut, padang rumput).\n• **Ekosistem Buatan:** Sengaja dibuat manusia (sawah, kolam ikan, akuarium, kebun).' },
+ { keys: ['pencemaran', 'polusi', 'sampah', 'menjaga', 'pelestarian'], ans: '♻️ **Menjaga Keseimbangan Ekosistem:**\nMembuang sampah plastik ke sungai atau menebang hutan sembarangan merusak habitat makhluk hidup. Kita bisa membantu dengan memilah sampah, menghemat air, menanam pohon, dan tidak memburu satwa liar.' },
+ { keys: ['eco-sim', 'grafik', 'simulasi', 'kemarau', 'rubah', 'kelinci'], ans: '🧪 **Tips Membaca Eco-Sim Virtual Lab:**\n• Jika **Air** dikurangi (kemarau), **Tumbuhan** turun sehingga **Kelinci** kekurangan makanan dan ikut menurun.\n• Jika **Rubah** terlalu banyak, kelinci habis dimangsa lalu rubah kelaparan.\n• Jika **Rubah = 0**, kelinci membludak dan menghabiskan tumbuhan!\nKlik **▶ Jalankan Simulasi** lalu amati garis hijau (tumbuhan), biru (kelinci), dan oranye (rubah) dari T0 sampai T8.' },
+ { keys: ['cer', 'claim', 'evidence', 'reasoning', 'kesimpulan'], ans: '🧠 **Cara Menulis CER yang Hebat:**\n1. **Claim (Klaim):** Jawaban/kesimpulan singkatmu (Contoh: *Jika air berkurang, populasi kelinci ikut turun*).\n2. **Evidence (Bukti):** Angka nyata dari grafik Eco-Sim (Contoh: *Saat air 15, tumbuhan turun dari 60 ke 21 dan kelinci dari 50 ke 28*).\n3. **Reasoning (Penalaran):** Penjelasan sains mengapa itu terjadi (Contoh: *Tumbuhan butuh air untuk fotosintesis; tanpa tumbuhan, kelinci kelaparan*).' },
+ { keys: ['penyiram', 'tetes', 'ember', 'lubang', '300 ml'], ans: '💧 **Tips Sukses Eksperimen Penyiram Tetes (Target 300 ml & Terbuang <80 ml):**\n• Atur **Volume Air** sekitar **400–600 ml**.\n• Gunakan **2 atau 3 lubang tetes** saja agar air tidak tumpah terlalu cepat.\n• Pilih **Media Tanam Gembur (70%–85%)** dan geser ember lebih dekat ke tanaman agar selang pendek.\n• Klik **▶ Uji Rancangan Sekarang** dan lihat indikatornya sampai hijau!' },
+ { keys: ['filter', 'penjernih', 'arang', 'kerikil', 'pasir', 'kapas'], ans: '🚰 **Tips Sukses Eksperimen Filter Air Sederhana:**\n1. **Kerikil (Atas, 2–4 cm):** Menyaring daun, sampah kasar, dan kotoran besar.\n2. **Pasir Halus (3–5 cm):** Menahan lumpur kecil penyebab air keruh.\n3. **Arang Aktif (3–5 cm):** Menyerap bau tidak sedap, zat warna, dan limbah sabun.\n4. **Kapas/Spons (Bawah, 2–3 cm):** Penyaring akhir partikel mikro sekaligus menahan butiran pasir agar tidak turun ke air bersih!' }
+];
+
+function localLalaReply(userText) {
+ const q = userText.toLowerCase();
+ let bestMatch = null;
+ let bestScore = 0;
+
+ lalaKnowledgeBase.forEach(item => {
+  let score = 0;
+  item.keys.forEach(k => {
+   if (q.includes(k)) score += k.length;
+  });
+  if (score > bestScore) {
+   bestScore = score;
+   bestMatch = item.ans;
+  }
+ });
+
+ if (bestMatch) return bestMatch;
+ return 'Pertanyaan yang menarik! 🦋 Dalam materi **Harmoni Ekosistem**, ingatlah bahwa komponen **biotik** (tumbuhan, hewan, pengurai) dan **abiotik** (air, cahaya matahari, tanah, udara) saling terhubung.\n\nCoba tanyakan topik spesifik seperti **"rantai makanan"**, **"fotosintesis"**, **"simbiosis"**, **"tips Eco-Sim CER"**, **"Penyiram Tetes"**, atau **"Filter Air Sederhana"**!';
+}
+
+function handleGemaSubmit(e) {
+ if (e && e.preventDefault) e.preventDefault();
+ if (gemaBusy) return;
+ const inp = document.getElementById('gemaInput');
+ if (!inp) return;
+ const text = inp.value.trim();
+ if (!text) return;
+
+ appendGemaMessage('user', text);
+ inp.value = '';
+ gemaBusy = true;
+
+ const box = document.getElementById('gemaMessages');
+ const typing = document.createElement('div');
+ typing.className = 'gema-msg bot';
+ typing.id = 'gemaTypingBubble';
+ typing.innerHTML = '<div class="gema-typing"><span></span><span></span><span></span></div>';
+ if (box) {
+  box.appendChild(typing);
+  box.scrollTop = box.scrollHeight;
+ }
+
+ setTimeout(() => {
+  const tb = document.getElementById('gemaTypingBubble');
+  if (tb) tb.remove();
+  appendGemaMessage('bot', localLalaReply(text));
+  gemaBusy = false;
+ }, 380);
+}
+
+/* === ECO-SIM VIRTUAL LAB & GRAFIK TREN === */
+function setLabPreset(p, w, f) {
+ document.getElementById('plants').value = p;
+ document.getElementById('water').value = w;
+ document.getElementById('foxes').value = f;
+ syncLab();
+ runSimulation();
+}
+
+function syncLab() {
+ const p = +document.getElementById('plants').value;
+ const w = +document.getElementById('water').value;
+ const f = +document.getElementById('foxes').value;
+ document.getElementById('plantVal').textContent = p;
+ document.getElementById('waterVal').textContent = w;
+ document.getElementById('foxVal').textContent = f;
+ renderSimScene(p, 50, f, w);
+}
+
+function renderSimScene(p, r, f, w) {
+ const pond = document.getElementById('simPond');
+ const ground = document.getElementById('simGround');
+ const entities = document.getElementById('simEntities');
+ if (pond) {
+  pond.style.transform = `rotate(-7deg) scale(${0.45 + (w / 100) * 0.65})`;
+  pond.style.opacity = w < 20 ? '0.45' : '1';
+ }
+ if (ground) {
+  ground.style.background = w < 25 ? '#b5a858' : '#70ad58';
+ }
+ if (!entities) return;
+
+ const treeCount = Math.max(1, Math.min(7, Math.round(p / 15)));
+ const rabbitCount = Math.max(0, Math.min(6, Math.round(r / 16)));
+ const foxCount = Math.max(0, Math.min(4, Math.round(f / 20)));
+
+ let html = '';
+ const treePos = [[10,52],[22,55],[33,50],[66,51],[77,55],[87,50],[50,48]];
+ for (let i = 0; i < treeCount; i++) {
+  const [x, y] = treePos[i];
+  html += `<div class="entity-item" style="left:${x}%;top:${y}%;font-size:${w<25?28:36}px">${w<25?'🥀':'🌳'}</div>`;
+ }
+ const rabPos = [[16,72],[28,76],[46,78],[62,74],[74,77],[84,71]];
+ for (let i = 0; i < rabbitCount; i++) {
+  const [x, y] = rabPos[i];
+  html += `<div class="entity-item" style="left:${x}%;top:${y}%;font-size:27px;animation-delay:${i*0.3}s">🐇</div>`;
+ }
+ const foxPos = [[12,81],[36,83],[68,82],[86,80]];
+ for (let i = 0; i < foxCount; i++) {
+  const [x, y] = foxPos[i];
+  html += `<div class="entity-item" style="left:${x}%;top:${y}%;font-size:30px;animation-delay:${i*0.4}s">🦊</div>`;
+ }
+ entities.innerHTML = html;
+}
+
+function runSimulation() {
+ let p = +document.getElementById('plants').value;
+ const w = +document.getElementById('water').value;
+ let f = +document.getElementById('foxes').value;
+ const initFox = f;
+ let r = 50;
+
+ const histP = [p], histR = [r], histF = [f];
+ for (let t = 1; t <= 8; t++) {
+  const growth = (w / 100) * 14 - (r * 0.14);
+  p = Math.max(5, Math.min(100, Math.round(p + growth)));
+  const rDelta = (p * 0.13) - (f * 0.25) - 2.2;
+  r = Math.max(2, Math.min(100, Math.round(r + rDelta)));
+  if (f > 0) {
+   const fDelta = r >= 22 ? (r * 0.08 - 2.2) : -Math.max(6, Math.round(f * 0.24));
+   f = Math.max(1, Math.min(90, Math.round(f + fDelta)));
+  }
+  histP.push(p); histR.push(r); histF.push(f);
+ }
+
+ document.getElementById('plantPop').textContent = p;
+ document.getElementById('rabbitPop').textContent = r;
+ document.getElementById('foxPop').textContent = f;
+
+ document.getElementById('simChart').innerHTML = `
+  <div class="chart-col"><b>${p}</b><i style="height:${p}%;background:#55a96d"></i><em>Tumbuhan</em></div>
+  <div class="chart-col"><b>${r}</b><i style="height:${r}%;background:#4b9bc4"></i><em>Kelinci</em></div>
+  <div class="chart-col"><b>${f}</b><i style="height:${f}%;background:#e69a54"></i><em>Rubah</em></div>
+ `;
+
+ renderSimScene(p, r, f, w);
+ renderSimTrendSvg(histP, histR, histF);
+
+ let cond = 'Ekosistem Seimbang 🌿';
+ let story = 'Semua komponen berada dalam kondisi seimbang. Tumbuhan mendapat cukup air untuk menjadi makanan kelinci, dan rubah menjaga populasi kelinci tetap terkendali.';
+ if (w <= 25) {
+  cond = 'Kekeringan Ekstrem ☀️';
+  story = 'Air sangat sedikit sehingga banyak tumbuhan layu. Akibatnya kelinci kekurangan makanan dan populasinya menurun tajam.';
+ } else if (initFox >= 55) {
+  cond = 'Kelebihan Predator & Rubah Kelaparan 🦊';
+  story = 'Jumlah rubah yang terlalu banyak memangsa kelinci hingga hampir habis. Akibatnya pada tahap berikutnya rubah mengalami kelaparan dan populasinya ikut merosot tajam!';
+ } else if (initFox === 0 && r >= 75) {
+  cond = 'Ledakan Populasi Mangsa 🐇';
+  story = 'Tanpa pemangsa (0 rubah), populasi kelinci berkembang pesat dan memakan hampir seluruh tumbuhan di hutan!';
+ }
+
+ document.getElementById('simCondition').textContent = cond;
+ document.getElementById('simStatus').textContent = 'Simulasi 8 bulan selesai ✓';
+ document.getElementById('simImpact').innerHTML = `<b>📖 Cerita Perubahan Ekosistem (${cond}):</b><br>${story}`;
+
+ data.lab = { condition: cond, plant: p, rabbit: r, fox: f, water: w };
+ saveData();
+}
+
+function renderSimTrendSvg(hp, hr, hf) {
+ const box = document.getElementById('simTrendChart');
+ if (!box) return;
+ const W = 600, H = 165, padL = 32, padR = 16, padT = 14, padB = 24;
+ const toPts = arr => arr.map((v, i) => {
+  const x = padL + (i / (arr.length - 1)) * (W - padL - padR);
+  const y = H - padB - (v / 100) * (H - padT - padB);
+  return `${x.toFixed(1)},${y.toFixed(1)}`;
+ }).join(' ');
+
+ let xLabels = '';
+ for (let i = 0; i < hp.length; i++) {
+  const x = padL + (i / (hp.length - 1)) * (W - padL - padR);
+  xLabels += `<text x="${x}" y="${H - 6}" font-size="10" text-anchor="middle" fill="#64766b">T${i}</text>`;
+ }
+
+ box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
+  <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${H-padB}" stroke="#cfe2d2" stroke-width="1"/>
+  <line x1="${padL}" y1="${H-padB}" x2="${W-padR}" y2="${H-padB}" stroke="#cfe2d2" stroke-width="1"/>
+  <text x="6" y="${padT+6}" font-size="9" fill="#64766b">100</text>
+  <text x="10" y="${(H-padB+padT)/2}" font-size="9" fill="#64766b">50</text>
+  <text x="14" y="${H-padB}" font-size="9" fill="#64766b">0</text>
+  ${xLabels}
+  <polyline fill="none" stroke="#55a96d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${toPts(hp)}"/>
+  <polyline fill="none" stroke="#4b9bc4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${toPts(hr)}"/>
+  <polyline fill="none" stroke="#e69a54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${toPts(hf)}"/>
+ </svg>`;
+}
+
+function resetLab() {
+ setLabPreset(70, 70, 30);
+}
+
+function saveCER() {
+ data.cer = {
+  claim: document.getElementById('cerClaim').value.trim(),
+  evidence: document.getElementById('cerEvidence').value.trim(),
+  reason: document.getElementById('cerReason').value.trim()
+ };
+ if (data.cer.claim && data.cer.evidence && data.cer.reason) mark('lab');
+ saveData();
+ document.getElementById('cerStatus').textContent = 'Analisis CER tersimpan ✓';
+ toast('Analisis CER berhasil disimpan!');
+}
+
+function loadCER() {
+ document.getElementById('cerClaim').value = data.cer?.claim || '';
+ document.getElementById('cerEvidence').value = data.cer?.evidence || '';
+ document.getElementById('cerReason').value = data.cer?.reason || '';
+}
+
+/* === PUZZLE BIOTIK & ABIOTIK === */
+const puzzleItems = [
+ { id: 'p1', icon: '🌳', label: 'Pohon', type: 'biotik' },
+ { id: 'p2', icon: '☀️', label: 'Cahaya Matahari', type: 'abiotik' },
+ { id: 'p3', icon: '🐇', label: 'Kelinci', type: 'biotik' },
+ { id: 'p4', icon: '💧', label: 'Air Sungai', type: 'abiotik' },
+ { id: 'p5', icon: '🍄', label: 'Jamur', type: 'biotik' },
+ { id: 'p6', icon: '🪨', label: 'Batu', type: 'abiotik' },
+ { id: 'p7', icon: '🐟', label: 'Ikan', type: 'biotik' },
+ { id: 'p8', icon: '🌬️', label: 'Udara', type: 'abiotik' },
+ { id: 'p9', icon: '🦋', label: 'Kupu-kupu', type: 'biotik' },
+ { id: 'p10', icon: '🏜️', label: 'Tanah & Pasir', type: 'abiotik' }
+];
+let selectedPuzzleId = null;
+let solvedPuzzleIds = [];
+
+function renderPuzzle() {
+ const container = document.getElementById('puzzleItems');
+ if (!container) return;
+ if (data.puzzle >= 10 && solvedPuzzleIds.length === 0) {
+  solvedPuzzleIds = puzzleItems.map(x => x.id);
+ }
+ container.innerHTML = puzzleItems.map(item => {
+  const solved = solvedPuzzleIds.includes(item.id);
+  const selected = selectedPuzzleId === item.id;
+  return `<button type="button" class="game-item clickable" style="${solved ? 'opacity:.42;border-color:#55a96d;background:#edf7ed' : ''}${selected ? 'border:2px solid #176b4d;background:#e8f5e9;transform:translateY(-4px)' : ''}" ${solved ? 'disabled' : ''} onclick="selectPuzzleCard('${item.id}')">${item.icon}<small>${item.label}${solved ? ' ✓' : ''}</small></button>`;
+ }).join('');
+ document.getElementById('puzzleCount').textContent = `${solvedPuzzleIds.length} / 10 benar`;
+ document.getElementById('puzzleScore').textContent = `Skor: ${solvedPuzzleIds.length * 10}`;
+}
+
+function selectPuzzleCard(id) {
+ selectedPuzzleId = id;
+ const item = puzzleItems.find(x => x.id === id);
+ document.getElementById('puzzleFeedback').innerHTML = `Kartu terpilih: <b>${item.icon} ${item.label}</b>. Sekarang klik kotak <b>BIOTIK</b> atau <b>ABIOTIK</b> di bawah!`;
+ renderPuzzle();
+}
+
+function classify(targetType) {
+ if (!selectedPuzzleId) {
+  toast('Pilih salah satu kartu terlebih dahulu!');
+  return;
+ }
+ const item = puzzleItems.find(x => x.id === selectedPuzzleId);
+ if (!item) return;
+ if (item.type === targetType) {
+  solvedPuzzleIds.push(item.id);
+  selectedPuzzleId = null;
+  data.puzzle = solvedPuzzleIds.length;
+  if (data.puzzle >= 10) mark('puzzle');
+  saveData();
+  document.getElementById('puzzleFeedback').innerHTML = `<span style="color:#1b6844">✅ <b>Benar!</b> ${item.label} termasuk komponen <b>${targetType.toUpperCase()}</b> (+10 poin).</span>`;
+ } else {
+  document.getElementById('puzzleFeedback').innerHTML = `<span style="color:#a4462c">❌ Belum tepat. Coba pikirkan: apakah <b>${item.label}</b> bernapas, tumbuh, dan berkembang biak?</span>`;
+ }
+ renderPuzzle();
+}
+
+function resetPuzzle() {
+ selectedPuzzleId = null;
+ solvedPuzzleIds = [];
+ data.puzzle = 0;
+ saveData();
+ document.getElementById('puzzleFeedback').textContent = 'Pilih kartu untuk memulai.';
+ renderPuzzle();
+}
+
+/* === ECO ARCADE (5 GAME INTERAKTIF) === */
+const arcadeBank = {
+ catcher: {
+  title: '1. Eco Catcher — Pilah Biotik & Abiotik',
+  inst: 'Tentukan apakah objek berikut termasuk makhluk hidup (Biotik) atau benda tak hidup (Abiotik)!',
+  rounds: [
+   { prompt: '🌿 Rumput Hijau di Padang', opts: ['Biotik (Makhluk Hidup)', 'Abiotik (Tak Hidup)'], ans: 0, exp: 'Rumput melakukan fotosintesis, tumbuh, dan berkembang biak sehingga termasuk biotik.' },
+   { prompt: '💧 Air Terjun Pegunungan', opts: ['Biotik (Makhluk Hidup)', 'Abiotik (Tak Hidup)'], ans: 1, exp: 'Air adalah komponen abiotik yang sangat dibutuhkan semua makhluk hidup.' },
+   { prompt: '🦠 Bakteri Pengurai di Tanah', opts: ['Biotik (Makhluk Hidup)', 'Abiotik (Tak Hidup)'], ans: 0, exp: 'Meskipun sangat kecil, bakteri adalah makhluk hidup pengurai (biotik).' },
+   { prompt: '☀️ Cahaya Matahari Pagi', opts: ['Biotik (Makhluk Hidup)', 'Abiotik (Tak Hidup)'], ans: 1, exp: 'Cahaya matahari merupakan sumber energi utama tak hidup (abiotik).' }
+  ]
+ },
+ runner: {
+  title: '2. Food Chain Runner — Urutan Rantai Makanan',
+  inst: 'Pilih urutan aliran energi rantai makanan yang paling tepat!',
+  rounds: [
+   { prompt: 'Rantai makanan di ekosistem sawah:', opts: ['Padi → Belalang → Katak → Ular', 'Ular → Katak → Belalang → Padi', 'Belalang → Padi → Ular → Katak'], ans: 0, exp: 'Energi mengalir dari produsen (padi) ke konsumen I (belalang), konsumen II (katak), lalu konsumen III (ular).' },
+   { prompt: 'Rantai makanan di ekosistem kebun:', opts: ['Burung Pipit → Ulat → Daun Sawi', 'Daun Sawi → Ulat → Burung Pipit → Elang', 'Elang → Daun Sawi → Ulat'], ans: 1, exp: 'Daun sawi adalah produsen yang dimakan ulat, lalu ulat dimakan burung pipit dan elang.' },
+   { prompt: 'Rantai makanan di ekosistem kolam:', opts: ['Fitoplankton → Ikan Kecil → Ikan Gabus → Bangau', 'Bangau → Ikan Gabus → Fitoplankton', 'Ikan Kecil → Bangau → Fitoplankton'], ans: 0, exp: 'Fitoplankton berperan sebagai produsen di perairan.' }
+  ]
+ },
+ defender: {
+  title: '3. Eco Defender — Penjaga Keseimbangan Alam',
+  inst: 'Pilih tindakan terbaik untuk menjaga harmoni ekosistem!',
+  rounds: [
+   { prompt: 'Populasi tikus di sawah meningkat pesat karena ular sering diburu. Solusi ramah lingkungan adalah...', opts: ['Menjaga kelestarian predator alami seperti burung hantu dan ular sawah', 'Menyemprot racun kimia berlebihan ke seluruh sungai', 'Membakar seluruh lahan sawah'], ans: 0, exp: 'Melindungi predator alami mengendalikan populasi tikus secara seimbang tanpa meracuni lingkungan.' },
+   { prompt: 'Banyak sampah plastik menyumbat selokan menuju sungai sekolah. Tindakanmu adalah...', opts: ['Membiarkannya terbawa hujan', 'Mengadakan gerakan pilah sampah dan mengurangi botol sekali pakai', 'Membuang sampah ke semak-semak'], ans: 1, exp: 'Mengurangi dan memilah sampah mencegah pencemaran air sungai.' },
+   { prompt: 'Lahan gundul di bukit rawan longsor saat musim hujan. Langkah tepat adalah...', opts: ['Menanam kembali pohon lokal (reboisasi)', 'Menebang sisa pohon yang ada', 'Menutup seluruh bukit dengan plastik'], ans: 0, exp: 'Akar pohon membantu menahan tanah dan menyerap air hujan.' }
+  ]
+ },
+ puzzle: {
+  title: '4. Puzzle Ecosystem — Peran Penghuni Alam',
+  inst: 'Cocokkan organisme dengan perannya dalam ekosistem!',
+  rounds: [
+   { prompt: '🍄 Jamur dan Bakteri Tanah berperan sebagai...', opts: ['Produsen', 'Konsumen Puncak', 'Pengurai (Dekomposer)'], ans: 2, exp: 'Pengurai menguraikan sisa makhluk hidup mati menjadi zat hara penyubur tanah.' },
+   { prompt: '🌳 Pohon Mangga berperan sebagai...', opts: ['Produsen', 'Konsumen I', 'Pengurai'], ans: 0, exp: 'Tumbuhan hijau menghasilkan makanan sendiri lewat fotosintesis sehingga disebut produsen.' },
+   { prompt: '🐝 Lebah yang menghisap nektar sekaligus membantu penyerbukan bunga membentuk simbiosis...', opts: ['Parasitisme', 'Mutualisme', 'Komensalisme'], ans: 1, exp: 'Kedua pihak saling diuntungkan: lebah mendapat nektar, bunga terbantu penyerbukannya.' }
+  ]
+ },
+ mission: {
+  title: '5. Mission Green Earth — Solusi Berkelanjutan',
+  inst: 'Pecahkan masalah nyata lingkungan dengan prinsip STEM!',
+  rounds: [
+   { prompt: 'Tanaman di halaman sekolah layu saat libur akhir pekan karena tidak ada yang menyiram. Solusi rekayasa hemat air adalah...', opts: ['Membuat alat penyiram tetes otomatis dari botol bekas', 'Membiarkan keran air mengalir terus 2 hari', 'Mencabut semua tanaman'], ans: 0, exp: 'Penyiram tetes mengalirkan air perlahan sesuai kebutuhan akar tanpa pemborosan.' },
+   { prompt: 'Air hujan sering terbuang begitu saja ke selokan. Cara memanfaatkannya adalah...', opts: ['Membuat lubang biopori dan bak penampung air hujan untuk menyiram tanaman', 'Menutup seluruh halaman dengan beton', 'Mengalirkannya ke tempat sampah'], ans: 0, exp: 'Biopori dan penampung air hujan menjaga cadangan air tanah.' }
+  ]
+ }
+};
+
+let activeGameKey = null;
+let gameIdx = 0;
+let gameRoundScore = 0;
+let gameAnswered = false;
+
+function startGame(key) {
+ activeGameKey = key;
+ gameIdx = 0;
+ gameRoundScore = 0;
+ document.getElementById('gamePanel').classList.remove('hidden');
+ renderGameRound();
+ document.getElementById('gamePanel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function closeGame() {
+ document.getElementById('gamePanel').classList.add('hidden');
+}
+
+function restartGame() {
+ if (activeGameKey) startGame(activeGameKey);
+}
+
+function renderGameRound() {
+ const g = arcadeBank[activeGameKey];
+ if (!g) return;
+ const r = g.rounds[gameIdx];
+ gameAnswered = false;
+ document.getElementById('gameTitle').textContent = g.title;
+ document.getElementById('gameInstruction').textContent = g.inst;
+ document.getElementById('gameProgress').textContent = `Misi ${gameIdx + 1} dari ${g.rounds.length}`;
+ document.getElementById('gameScore').textContent = `${gameRoundScore} poin`;
+ document.getElementById('gameBar').style.width = `${((gameIdx) / g.rounds.length) * 100}%`;
+ document.getElementById('gameFeedback').innerHTML = '';
+ document.getElementById('nextGameBtn').disabled = true;
+
+ document.getElementById('gameWorld').innerHTML = `<div style="font-size:17px;font-weight:800;text-align:center;color:#176b4d;padding:10px">${r.prompt}</div>`;
+ document.getElementById('gameQuestion').innerHTML = r.opts.map((opt, idx) =>
+  `<button type="button" class="quiz-option" onclick="answerGame(${idx}, this)">${String.fromCharCode(65 + idx)}. ${opt}</button>`
+ ).join('');
+}
+
+function answerGame(idx, btn) {
+ if (gameAnswered) return;
+ gameAnswered = true;
+ const g = arcadeBank[activeGameKey];
+ const r = g.rounds[gameIdx];
+ document.querySelectorAll('#gameQuestion .quiz-option').forEach(b => b.classList.remove('selected'));
+ btn.classList.add('selected');
+
+ if (idx === r.ans) {
+  gameRoundScore += 25;
+  document.getElementById('gameFeedback').innerHTML = `<div class="feedback good">✅ <b>Hebat!</b> ${r.exp}</div>`;
+ } else {
+  document.getElementById('gameFeedback').innerHTML = `<div class="feedback bad">💡 <b>Kurang tepat.</b> ${r.exp}</div>`;
+ }
+ document.getElementById('gameScore').textContent = `${gameRoundScore} poin`;
+ document.getElementById('gameBar').style.width = `${((gameIdx + 1) / g.rounds.length) * 100}%`;
+ document.getElementById('nextGameBtn').disabled = false;
+}
+
+function nextGame() {
+ const g = arcadeBank[activeGameKey];
+ if (gameIdx + 1 < g.rounds.length) {
+  gameIdx++;
+  renderGameRound();
+ } else {
+  data.arcade[activeGameKey] = Math.max(data.arcade[activeGameKey] || 0, gameRoundScore);
+  if (Object.keys(data.arcade).length >= 3) mark('arcade');
+  saveData();
+  document.getElementById('gameWorld').innerHTML = `<div style="text-align:center;padding:16px"><div style="font-size:44px">🏆</div><h3>Misi Selesai!</h3><p>Kamu memperoleh <b>${gameRoundScore} poin</b> pada permainan ini.</p></div>`;
+  document.getElementById('gameQuestion').innerHTML = '';
+  document.getElementById('nextGameBtn').disabled = true;
+  toast('Skor Eco Arcade tersimpan!');
+ }
+}
+
+/* === JURNAL EDP === */
+function saveEDP() {
+ const inputs = document.querySelectorAll('.edp-input');
+ data.edp = {
+  projectType: document.getElementById('edpProjectType')?.value || 'Penyiram Tetes Hemat Air',
+  problem: document.getElementById('edpProblem')?.value.trim() || '',
+  s1: inputs[0]?.value.trim() || '',
+  s2: inputs[1]?.value.trim() || '',
+  s3: inputs[2]?.value.trim() || '',
+  s4: inputs[3]?.value.trim() || '',
+  s5: inputs[4]?.value.trim() || '',
+  s6: inputs[5]?.value.trim() || ''
+ };
+ if (data.edp.problem && data.edp.s1 && data.edp.s5) mark('edp');
+ saveData();
+ const st = document.getElementById('edpStatus');
+ if (st) st.textContent = 'Jurnal EDP tersimpan ✓';
+ toast('Jurnal 6 Tahap EDP berhasil disimpan!');
+}
+
+function loadEDP() {
+ const typeSel = document.getElementById('edpProjectType');
+ if (typeSel && data.edp?.projectType) typeSel.value = data.edp.projectType;
+ const prob = document.getElementById('edpProblem');
+ if (prob) prob.value = data.edp?.problem || '';
+ const inputs = document.querySelectorAll('.edp-input');
+ if (inputs.length >= 6) {
+  inputs[0].value = data.edp?.s1 || '';
+  inputs[1].value = data.edp?.s2 || '';
+  inputs[2].value = data.edp?.s3 || '';
+  inputs[3].value = data.edp?.s4 || '';
+  inputs[4].value = data.edp?.s5 || '';
+  inputs[5].value = data.edp?.s6 || '';
+ }
+}
+
+/* === LABORATORIUM REKAYASA 1: PENYIRAM TETES HEMAT AIR === */
+let bucketXPercent = 12;
+let lastEngSummary = '';
+
+function updateEngineeringHose() {
+ const scene = document.getElementById('engScene');
+ const bucket = document.getElementById('engBucket');
+ const stand = document.getElementById('engStand');
+ const hosePath = document.getElementById('engHosePath');
+ const hoseFlow = document.getElementById('engHoseFlow');
+ const distLabel = document.getElementById('engSceneDist');
+ if (!scene || !bucket || !hosePath) return;
+
+ const hVal = +(document.getElementById('engHeight')?.value || 50);
+ const standH = Math.round(16 + (hVal / 100) * 56);
+ if (stand) {
+  stand.style.left = bucketXPercent + '%';
+  stand.style.height = standH + 'px';
+ }
+ bucket.style.left = bucketXPercent + '%';
+ bucket.style.bottom = (64 + standH - 26) + 'px';
+
+ if (distLabel) {
+  distLabel.textContent = bucketXPercent >= 52 ? 'Dekat (Optimal)' : (bucketXPercent >= 32 ? 'Sedang' : 'Jauh');
+ }
+
+ const startX = Math.round((bucketXPercent / 100) * 1000 + 82);
+ const startY = Math.round(265 - (64 + standH));
+ const endX = 855;
+ const endY = 172;
+ const ctrlX = Math.round((startX + endX) / 2);
+ const ctrlY = Math.max(startY, endY) + 26;
+ const d = `M${startX} ${startY} Q${ctrlX} ${ctrlY} ${endX} ${endY}`;
+ hosePath.setAttribute('d', d);
+ if (hoseFlow) hoseFlow.setAttribute('d', d);
+}
+
+function initBucketDrag() {
+ const bucket = document.getElementById('engBucket');
+ const scene = document.getElementById('engScene');
+ if (!bucket || !scene) return;
+ let dragging = false;
+
+ const moveHandler = (clientX) => {
+  if (!dragging) return;
+  const rect = scene.getBoundingClientRect();
+  const relX = ((clientX - rect.left - 44) / rect.width) * 100;
+  bucketXPercent = Math.max(6, Math.min(64, Math.round(relX)));
+  updateEngineeringHose();
+ };
+
+ bucket.addEventListener('pointerdown', (e) => {
+  dragging = true;
+  bucket.style.cursor = 'grabbing';
+  if (bucket.setPointerCapture) bucket.setPointerCapture(e.pointerId);
+ });
+ window.addEventListener('pointermove', (e) => moveHandler(e.clientX));
+ window.addEventListener('pointerup', () => {
+  dragging = false;
+  bucket.style.cursor = 'grab';
+ });
+}
+
+function syncEngineering() {
+ const vol = +(document.getElementById('engVolume')?.value || 1000);
+ const holes = +(document.getElementById('engHoles')?.value || 3);
+ const height = +(document.getElementById('engHeight')?.value || 50);
+ const time = +(document.getElementById('engTime')?.value || 30);
+ const absorb = +(document.getElementById('engAbsorb')?.value || 70);
+
+ document.getElementById('engVolumeVal').textContent = `${vol} ml`;
+ document.getElementById('engHolesVal').textContent = `${holes} lubang`;
+ document.getElementById('engHeightVal').textContent = `${height} cm`;
+ document.getElementById('engTimeVal').textContent = `${time} menit`;
+ document.getElementById('engAbsorbVal').textContent = `${absorb}% (${absorb >= 75 ? 'Tanah Gembur' : absorb >= 55 ? 'Tanah Kebun' : 'Tanah Berpasir'})`;
+ document.getElementById('engSceneHeight').textContent = height;
+
+ const fill = document.getElementById('engWaterFill');
+ const lbl = document.getElementById('engBucketLabel');
+ if (fill) fill.style.height = `${Math.min(100, Math.round((vol / 2000) * 100))}%`;
+ if (lbl) lbl.textContent = `${vol} ml`;
+ updateEngineeringHose();
+}
+
+function runEngineering() {
+ const vol = +(document.getElementById('engVolume')?.value || 1000);
+ const holes = +(document.getElementById('engHoles')?.value || 3);
+ const height = +(document.getElementById('engHeight')?.value || 50);
+ const time = +(document.getElementById('engTime')?.value || 30);
+ const absorb = +(document.getElementById('engAbsorb')?.value || 70);
+
+ const distFactor = 0.82 + (bucketXPercent / 100) * 0.36;
+ const rawFlow = holes * 3.1 * (0.65 + height / 100) * (time / 10) * distFactor * 10;
+ const delivered = Math.min(vol, Math.round(rawFlow));
+ const useful = Math.min(300, Math.round(delivered * (absorb / 100)));
+ const waste = Math.max(0, delivered - useful);
+ const pct = Math.min(100, Math.round((useful / 300) * 100));
+
+ document.getElementById('engDelivered').textContent = `${delivered} ml`;
+ document.getElementById('engUseful').textContent = `${useful} ml`;
+ document.getElementById('engWaste').textContent = `${waste} ml`;
+ document.getElementById('engPercent').textContent = `${pct}%`;
+ document.getElementById('engBar').style.width = `${pct}%`;
+
+ const hoseFlow = document.getElementById('engHoseFlow');
+ const dropAnim = document.getElementById('engDropAnim');
+ const badge = document.getElementById('engPlantBadge');
+ const plantIcon = document.getElementById('engPlantIcon');
+ if (hoseFlow) hoseFlow.setAttribute('opacity', '1');
+ if (dropAnim) dropAnim.style.display = 'block';
+
+ let verdict = '';
+ if (pct >= 95 && waste < 80) {
+  verdict = `🌟 <b>Berhasil Optimal!</b> Tanaman menerima <b>${useful} ml</b> (${pct}%) dan air terbuang hanya <b>${waste} ml</b> (< 80 ml). Rancangan penyiram tetesmu sangat hemat air!`;
+  if (badge) badge.textContent = '🌿 Tumbuh Segar & Optimal';
+  if (plantIcon) plantIcon.style.transform = 'scale(1.08)';
+ } else if (waste >= 80) {
+  verdict = `⚠️ <b>Terlalu Banyak Air Terbuang (${waste} ml)!</b> Kurangi jumlah lubang tetes, turunkan volume air awal, atau tingkatkan daya serap media tanam agar air tidak tumpah sia-sia.`;
+  if (badge) badge.textContent = '💦 Kebanjiran / Boros Air';
+  if (plantIcon) plantIcon.style.transform = 'scale(1)';
+ } else {
+  verdict = `💧 <b>Tanaman Masih Kekurangan Air (${useful} ml / ${pct}%).</b> Coba tambah lama penyiraman, tambah 1 lubang tetes, atau geser ember mendekati tanaman.`;
+  if (badge) badge.textContent = '🥀 Masih Haus Air';
+  if (plantIcon) plantIcon.style.transform = 'scale(0.95)';
+ }
+
+ document.getElementById('engFeedback').innerHTML = verdict;
+ document.getElementById('engStatus').textContent = 'Pengujian rancangan selesai ✓';
+ lastEngSummary = `[Penyiram Tetes] Volume ${vol} ml, ${holes} lubang, tinggi ${height} cm, waktu ${time} menit, media ${absorb}%. Hasil: air diminum tanaman ${useful} ml (${pct}%), air terbuang ${waste} ml.`;
+ data.engineering = { vol, holes, height, time, absorb, delivered, useful, waste, pct };
+ saveData();
+}
+
+function resetEngineering() {
+ document.getElementById('engVolume').value = 1000;
+ document.getElementById('engHoles').value = 3;
+ document.getElementById('engHeight').value = 50;
+ document.getElementById('engTime').value = 30;
+ document.getElementById('engAbsorb').value = 70;
+ bucketXPercent = 12;
+ syncEngineering();
+ document.getElementById('engDelivered').textContent = '—';
+ document.getElementById('engUseful').textContent = '—';
+ document.getElementById('engWaste').textContent = '—';
+ document.getElementById('engPercent').textContent = '—';
+ document.getElementById('engBar').style.width = '0%';
+ const dropAnim = document.getElementById('engDropAnim');
+ const hoseFlow = document.getElementById('engHoseFlow');
+ if (dropAnim) dropAnim.style.display = 'none';
+ if (hoseFlow) hoseFlow.setAttribute('opacity', '0');
+}
+
+function saveEngineeringResult() {
+ if (!lastEngSummary) {
+  toast('Klik "▶ Uji Rancangan Sekarang" terlebih dahulu!');
+  return;
+ }
+ const edp5 = document.getElementById('edp5');
+ if (edp5) {
+  edp5.value = edp5.value.trim() ? `${edp5.value.trim()}\n${lastEngSummary}` : lastEngSummary;
+ }
+ const typeSel = document.getElementById('edpProjectType');
+ if (typeSel) typeSel.value = 'Penyiram Tetes Hemat Air';
+ document.getElementById('engSaved').textContent = 'Hasil uji penyiram tetes tercatat di Tahap 5 (TEST) ✓';
+ saveEDP();
+}
+
+/* === LABORATORIUM REKAYASA 2: FILTER AIR SEDERHANA === */
+let filterSource = 'muddy';
+let lastFilterSummary = '';
+
+function setFilterSource(src) {
+ filterSource = src;
+ const map = {
+  muddy: ['Air Sungai Berlumpur', '#8d6e63'],
+  soap: ['Air Limbah Sabun & Bau', '#90a4ae'],
+  leaves: ['Air Kolam Berdaun', '#6d7b4c']
+ };
+ const [label, col] = map[src] || map.muddy;
+ const tag = document.getElementById('wfSourceTag');
+ const top = document.getElementById('wfTopWater');
+ if (tag) tag.textContent = 'Sumber: ' + label;
+ if (top) {
+  top.textContent = label;
+  top.style.background = col;
+ }
+ syncWaterFilter();
+}
+
+function syncWaterFilter() {
+ const g = +(document.getElementById('wfGravel')?.value || 2);
+ const s = +(document.getElementById('wfSand')?.value || 3);
+ const c = +(document.getElementById('wfCharcoal')?.value || 2);
+ const cot = +(document.getElementById('wfCotton')?.value || 2);
+
+ if (document.getElementById('wfGravelVal')) document.getElementById('wfGravelVal').textContent = `${g} cm`;
+ if (document.getElementById('wfSandVal')) document.getElementById('wfSandVal').textContent = `${s} cm`;
+ if (document.getElementById('wfCharcoalVal')) document.getElementById('wfCharcoalVal').textContent = `${c} cm`;
+ if (document.getElementById('wfCottonVal')) document.getElementById('wfCottonVal').textContent = `${cot} cm`;
+
+ const setH = (id, cm) => {
+  const el = document.getElementById(id);
+  if (el) el.style.height = (cm === 0 ? 12 : 14 + cm * 3) + 'px';
+ };
+ setH('wfLayerGravel', g);
+ setH('wfLayerSand', s);
+ setH('wfLayerCharcoal', c);
+ setH('wfLayerCotton', cot);
+}
+
+function runWaterFilter() {
+ const g = +(document.getElementById('wfGravel')?.value || 2);
+ const s = +(document.getElementById('wfSand')?.value || 3);
+ const c = +(document.getElementById('wfCharcoal')?.value || 2);
+ const cot = +(document.getElementById('wfCotton')?.value || 2);
+
+ const baseTurbidity = filterSource === 'muddy' ? 85 : (filterSource === 'soap' ? 75 : 65);
+ const baseToxin = filterSource === 'soap' ? 80 : 45;
+
+ const clarityGain = g * 5 + s * 11 + c * 4 + cot * 9;
+ const clarity = Math.min(99, Math.max(15, (100 - baseTurbidity) + clarityGain));
+ const remainingToxin = Math.max(4, Math.min(90, baseToxin - (c * 16 + cot * 4)));
+
+ document.getElementById('wfClarityStat').textContent = `${clarity}%`;
+ document.getElementById('wfToxinStat').textContent = `${remainingToxin}%`;
+
+ const resWater = document.getElementById('wfResultWater');
+ const fishEmoji = document.getElementById('wfFishEmoji');
+ const wLabel = document.getElementById('wfWaterLabel');
+ let ecoStatus = 'Perlu Perbaikan ⚠️';
+ let advice = '';
+
+ if (clarity >= 85 && remainingToxin <= 15 && cot >= 1) {
+  if (resWater) resWater.style.background = 'linear-gradient(#7ad7f0, #38b6dc)';
+  if (fishEmoji) fishEmoji.textContent = '🐟🌿✨';
+  if (wLabel) wLabel.textContent = 'Jernih & Sehat!';
+  ecoStatus = 'Sehat & Lestari 🌟';
+  advice = `🌟 <b>Filter Air Berhasil Sempurna!</b> Kejernihan mencapai <b>${clarity}%</b> dan sisa bau/racun turun menjadi <b>${remainingToxin}%</b>. Ikan dan ekosistem air kembali sehat!`;
+ } else if (cot === 0 && s > 0) {
+  if (resWater) resWater.style.background = '#c2a675';
+  if (fishEmoji) fishEmoji.textContent = '🐟💦';
+  if (wLabel) wLabel.textContent = 'Pasir Ikut Turun';
+  advice = `⚠️ <b>Kapas/Spons masih 0 cm!</b> Butiran pasir halus ikut lolos ke wadah bawah. Tambahkan lapisan <b>Kapas/Spons minimal 2 cm</b> di bagian paling bawah.`;
+ } else if (remainingToxin > 15) {
+  if (resWater) resWater.style.background = '#8ec5c9';
+  if (fishEmoji) fishEmoji.textContent = '🐟😵';
+  if (wLabel) wLabel.textContent = 'Masih Berbau/Sabun';
+  advice = `🧪 Air mulai jernih (<b>${clarity}%</b>), tetapi sisa bau/zat pencemar masih <b>${remainingToxin}%</b>. Pertebal lapisan <b>Arang Aktif</b> (minimal 3–4 cm)!`;
+ } else {
+  if (resWater) resWater.style.background = '#a89078';
+  if (fishEmoji) fishEmoji.textContent = '🐟😟';
+  if (wLabel) wLabel.textContent = 'Masih Keruh';
+  advice = `🪨 Air masih keruh (kejernihan <b>${clarity}%</b>). Coba pertebal lapisan <b>Kerikil</b> dan <b>Pasir Halus</b> agar lumpur tersaring maksimal.`;
+ }
+
+ document.getElementById('wfEcoHealthStat').textContent = ecoStatus;
+ document.getElementById('wfFeedback').innerHTML = advice;
+ document.getElementById('wfStatus').textContent = 'Pengujian filter air selesai ✓';
+
+ lastFilterSummary = `[Filter Air Sederhana] Susunan Kerikil ${g} cm, Pasir ${s} cm, Arang ${c} cm, Kapas ${cot} cm. Hasil: Kejernihan ${clarity}%, Sisa Bau/Racun ${remainingToxin}% (${ecoStatus}).`;
+ data.waterFilter = { source: filterSource, g, s, c, cot, clarity, remainingToxin, ecoStatus };
+ saveData();
+}
+
+function resetWaterFilter() {
+ document.getElementById('wfGravel').value = 2;
+ document.getElementById('wfSand').value = 3;
+ document.getElementById('wfCharcoal').value = 2;
+ document.getElementById('wfCotton').value = 2;
+ setFilterSource('muddy');
+ document.getElementById('wfClarityStat').textContent = '—';
+ document.getElementById('wfToxinStat').textContent = '—';
+ document.getElementById('wfEcoHealthStat').textContent = '—';
+}
+
+function saveWaterFilterResult() {
+ if (!lastFilterSummary) {
+  toast('Klik "▶ Uji Penyaringan Air" terlebih dahulu!');
+  return;
+ }
+ const edp5 = document.getElementById('edp5');
+ if (edp5) {
+  edp5.value = edp5.value.trim() ? `${edp5.value.trim()}\n${lastFilterSummary}` : lastFilterSummary;
+ }
+ const typeSel = document.getElementById('edpProjectType');
+ if (typeSel) typeSel.value = 'Filter Air Sederhana';
+ document.getElementById('wfSaved').textContent = 'Hasil uji filter air tercatat di Tahap 5 (TEST) ✓';
+ saveEDP();
+}
+
+/* === EVALUASI AKHIR (10 SOAL) === */
+const quizQuestions = [
+ { q: 'Kesatuan antara makhluk hidup dan lingkungan tak hidup yang saling berinteraksi disebut...', opts: ['Populasi', 'Ekosistem', 'Habitat', 'Individu'], ans: 1, exp: 'Ekosistem adalah interaksi timbal balik antara komponen biotik dan abiotik.' },
+ { q: 'Manakah kelompok komponen abiotik di bawah ini yang semuanya benar?', opts: ['Air, cahaya matahari, tanah, udara', 'Pohon, batu, kelinci, air', 'Jamur, bakteri, suhu, angin', 'Ikan, rumput, batu, udara'], ans: 0, exp: 'Air, cahaya matahari, tanah, dan udara adalah benda/faktor tak hidup (abiotik).' },
+ { q: 'Dalam rantai makanan: Rumput → Kelinci → Rubah → Jamur. Peran kelinci adalah...', opts: ['Produsen', 'Konsumen Tingkat I', 'Konsumen Tingkat II', 'Pengurai'], ans: 1, exp: 'Kelinci memakan produsen (rumput) secara langsung sehingga disebut konsumen tingkat I.' },
+ { q: 'Mengapa tumbuhan hijau disebut sebagai produsen dalam ekosistem?', opts: ['Karena memakan hewan kecil', 'Karena mampu membuat makanan sendiri melalui fotosintesis', 'Karena menguraikan bangkai makhluk hidup', 'Karena hidup di atas tanah'], ans: 1, exp: 'Tumbuhan hijau memiliki klorofil untuk membuat makanan sendiri dari cahaya matahari, air, dan CO₂.' },
+ { q: 'Hubungan antara lebah dan bunga yang saling menguntungkan disebut simbiosis...', opts: ['Parasitisme', 'Komensalisme', 'Mutualisme', 'Kompetisi'], ans: 2, exp: 'Mutualisme adalah interaksi dua makhluk hidup yang saling menguntungkan.' },
+ { q: 'Berdasarkan simulasi Eco-Sim, apa yang terjadi jika musim kemarau panjang mengurangi air secara drastis?', opts: ['Tumbuhan tumbuh semakin subur', 'Tumbuhan berkurang sehingga populasi kelinci ikut menurun', 'Populasi rubah langsung meningkat tajam', 'Tidak ada perubahan apa pun'], ans: 1, exp: 'Kekurangan air menghambat pertumbuhan tumbuhan sehingga kelinci kekurangan makanan.' },
+ { q: 'Apa fungsi utama pengurai (jamur dan bakteri) bagi ekosistem?', opts: ['Menghabiskan oksigen di udara', 'Menguraikan sisa makhluk hidup menjadi zat hara penyubur tanah', 'Memangsa hewan karnivor', 'Menghalangi cahaya matahari'], ans: 1, exp: 'Pengurai mengembalikan nutrisi dari sisa makhluk hidup ke dalam tanah.' },
+ { q: 'Pada proyek filter air sederhana, bahan yang paling efektif menyerap bau tidak sedap dan limbah sabun adalah...', opts: ['Kerikil besar', 'Arang aktif', 'Kaca bening', 'Daun kering'], ans: 1, exp: 'Arang aktif memiliki pori-pori halus yang mampu menyerap bau dan zat kimia pencemar.' },
+ { q: 'Dalam Engineering Design Process (EDP), tahap menguji prototipe alat penyiram tetes atau filter air dan mencatat hasilnya disebut...', opts: ['ASK', 'IMAGINE', 'TEST', 'CREATE'], ans: 2, exp: 'TEST adalah tahap menguji rancangan untuk mengetahui kelebihan dan kekurangannya.' },
+ { q: 'Tindakan nyata yang paling tepat untuk menjaga keseimbangan ekosistem sungai adalah...', opts: ['Membuang sampah plastik ke sungai agar terbawa arus', 'Menangkap ikan menggunakan racun', 'Tidak membuang sampah ke sungai dan menjaga tumbuhan di tepi sungai', 'Menebang semua pohon di sekitar sungai'], ans: 2, exp: 'Menjaga kebersihan sungai dan vegetasi tepiannya melindungi habitat organisme air.' }
+];
+
+let qIdx = 0;
+let qScore = 0;
+let qAnswered = false;
+
+function renderQuiz() {
+ const item = quizQuestions[qIdx];
+ if (!item) return;
+ qAnswered = false;
+ document.getElementById('quizCounter').textContent = `Soal ${qIdx + 1} dari ${quizQuestions.length}`;
+ document.getElementById('quizLiveScore').textContent = `Skor: ${qScore}`;
+ document.getElementById('quizBar').style.width = `${(qIdx / quizQuestions.length) * 100}%`;
+ document.getElementById('quizQuestion').textContent = `${qIdx + 1}. ${item.q}`;
+ document.getElementById('quizFeedback').innerHTML = '';
+ document.getElementById('quizNext').disabled = true;
+ document.getElementById('quizNext').textContent = qIdx === quizQuestions.length - 1 ? 'Lihat Nilai Akhir 🏆' : 'Soal Berikutnya →';
+
+ document.getElementById('quizOptions').innerHTML = item.opts.map((opt, idx) =>
+  `<button type="button" class="quiz-option" onclick="selectQuizOption(${idx}, this)">${String.fromCharCode(65 + idx)}. ${opt}</button>`
+ ).join('');
+}
+
+function selectQuizOption(idx, btn) {
+ if (qAnswered) return;
+ qAnswered = true;
+ const item = quizQuestions[qIdx];
+ document.querySelectorAll('#quizOptions .quiz-option').forEach(b => b.classList.remove('selected'));
+ btn.classList.add('selected');
+
+ if (idx === item.ans) {
+  qScore += 10;
+  document.getElementById('quizFeedback').innerHTML = `<div class="feedback good">✅ <b>Benar!</b> ${item.exp}</div>`;
+ } else {
+  document.getElementById('quizFeedback').innerHTML = `<div class="feedback bad">❌ <b>Kurang tepat.</b> Jawaban benar: <b>${item.opts[item.ans]}</b>. ${item.exp}</div>`;
+ }
+ document.getElementById('quizLiveScore').textContent = `Skor: ${qScore}`;
+ document.getElementById('quizBar').style.width = `${((qIdx + 1) / quizQuestions.length) * 100}%`;
+ document.getElementById('quizNext').disabled = false;
+}
+
+function nextQuiz() {
+ if (qIdx + 1 < quizQuestions.length) {
+  qIdx++;
+  renderQuiz();
+ } else {
+  data.quiz = qScore;
+  mark('quiz');
+  saveData();
+  document.getElementById('quizQuestion').innerHTML = `🎉 Evaluasi Selesai! Nilai Akhirmu: <span style="color:#176b4d">${qScore} / 100</span>`;
+  document.getElementById('quizOptions').innerHTML = `<div class="callout">${qScore >= 80 ? '🌟 Luar biasa! Pemahamanmu tentang Harmoni Ekosistem sangat mantap!' : '👍 Bagus! Kamu bisa mengulang materi atau mencoba kuis lagi untuk meraih nilai maksimal.'}</div>`;
+  document.getElementById('quizNext').disabled = true;
+  toast(`Nilai akhir ${qScore}/100 tersimpan!`);
+ }
+}
+
+function restartQuiz() {
+ qIdx = 0;
+ qScore = 0;
+ renderQuiz();
+}
+
+/* === REFLEKSI DIRI === */
+function saveReflection() {
+ const moodEl = document.querySelector('input[name="mood"]:checked');
+ const inputs = document.querySelectorAll('.reflection-input');
+ data.reflection = {
+  mood: moodEl ? moodEl.value : '',
+  r1: inputs[0]?.value.trim() || '',
+  r2: inputs[1]?.value.trim() || '',
+  r3: inputs[2]?.value.trim() || '',
+  r4: inputs[3]?.value.trim() || ''
+ };
+ if (data.reflection.r1 && data.reflection.r4) mark('reflection');
+ saveData();
+ document.getElementById('reflectionStatus').textContent = 'Refleksi tersimpan ✓';
+ toast('Jurnal refleksi berhasil disimpan!');
+}
+
+function loadReflection() {
+ if (data.reflection?.mood) {
+  const radio = document.querySelector(`input[name="mood"][value="${data.reflection.mood}"]`);
+  if (radio) radio.checked = true;
+ }
+ const inputs = document.querySelectorAll('.reflection-input');
+ if (inputs.length >= 4) {
+  inputs[0].value = data.reflection?.r1 || '';
+  inputs[1].value = data.reflection?.r2 || '';
+  inputs[2].value = data.reflection?.r3 || '';
+  inputs[3].value = data.reflection?.r4 || '';
+ }
+}
+
+/* === ZONA 10: FORUM DISKUSI & UMPAN BALIK KELAS (FIREBASE REAL-TIME + FALLBACK LOKAL) === */
+const firebaseClassConfig = {
+ apiKey: "AIzaSyCS3hJYRs8P6M5PteHIQycpu4JNLiVfT6Q",
+ authDomain: "ecoquest-kelas5.firebaseapp.com",
+ projectId: "ecoquest-kelas5",
+ storageBucket: "ecoquest-kelas5.firebasestorage.app",
+ messagingSenderId: "15360936959",
+ appId: "1:15360936959:web:c6ffa0b9ef81988419b5ca"
+};
+
+let cloudDb = null;
+let cloudReady = false;
+let collabPosts = [];
+
+function getDefaultCollabPosts() {
+ return [
+  {
+   id: 'welcome-guru-1',
+   author: 'Ibu/Bapak Guru IPAS',
+   role: 'guru',
+   topic: '🌟 Umpan Balik & Apresiasi Guru',
+   message: 'Selamat datang di Papan Diskusi Kelas V! Silakan bagikan hasil eksperimen Eco-Sim (CER), proyek Penyiram Tetes, atau proyek Filter Air Sederhana kalian di sini agar teman-teman dan guru dapat memberikan apresiasi serta masukan.',
+   likes: 3,
+   createdAt: Date.now() - 3600000,
+   replies: []
+  }
+ ];
+}
+
+function loadLocalCollabPosts() {
+ try {
+  const raw = JSON.parse(localStorage.getItem(COLLAB_KEY) || 'null');
+  collabPosts = Array.isArray(raw) && raw.length ? raw : getDefaultCollabPosts();
+ } catch (e) {
+  collabPosts = getDefaultCollabPosts();
+ }
+ renderCollabPosts();
+}
+
+function saveLocalCollabPosts() {
+ try {
+  localStorage.setItem(COLLAB_KEY, JSON.stringify(collabPosts));
+ } catch (e) {}
+}
+
+function toggleTeacherPinBox() {
+ const role = document.getElementById('collabRole')?.value;
+ const wrap = document.getElementById('teacherPinWrap');
+ if (wrap) wrap.classList.toggle('hidden', role !== 'guru');
+}
+
+function toggleResetCollabModal(show) {
+ const box = document.getElementById('resetCollabBox');
+ if (!box) return;
+ box.classList.toggle('hidden', !show);
+ if (show) {
+  const inp = document.getElementById('resetCollabPinInput');
+  if (inp) { inp.value = ''; inp.focus(); }
+ }
+}
+
+async function executeResetCollabBoard() {
+ const pin = (document.getElementById('resetCollabPinInput')?.value || '').trim().toUpperCase();
+ if (pin !== 'GURU5') {
+  toast('Kode guru belum sesuai. Masukkan kode guru untuk melanjutkan.');
+  return;
+ }
+
+ if (cloudReady && cloudDb && window._fsOps) {
+  try {
+   const { collection, getDocs, deleteDoc, doc } = window._fsOps;
+   const snap = await getDocs(collection(cloudDb, 'ecoquest_discussions'));
+   const deletions = [];
+   snap.forEach(d => deletions.push(deleteDoc(doc(cloudDb, 'ecoquest_discussions', d.id))));
+   await Promise.all(deletions);
+  } catch (err) {
+   console.warn('Reset cloud error:', err);
+  }
+ }
+
+ collabPosts = getDefaultCollabPosts();
+ saveLocalCollabPosts();
+ renderCollabPosts();
+ toggleResetCollabModal(false);
+ toast('Papan diskusi berhasil dibersihkan untuk kelas baru!');
+}
+
+function shareWorkToCollab(type, stayOnPage) {
+ let snippet = '';
+ if (type === 'cer') {
+  const c = document.getElementById('cerClaim')?.value.trim() || data.cer?.claim;
+  const e = document.getElementById('cerEvidence')?.value.trim() || data.cer?.evidence;
+  const r = document.getElementById('cerReason')?.value.trim() || data.cer?.reason;
+  if (!c && !e) {
+   toast('Isi terlebih dahulu Catatan CER di Eco-Sim sebelum dibagikan!');
+   return;
+  }
+  snippet = `📊 Hasil Analisis CER Eco-Sim:\n• Claim: ${c || '-'}\n• Evidence: ${e || '-'}\n• Reasoning: ${r || '-'}`;
+ } else if (type === 'edp') {
+  const prob = document.getElementById('edpProblem')?.value.trim() || data.edp?.problem;
+  const ide = document.querySelectorAll('.edp-input')[1]?.value.trim() || data.edp?.s2;
+  const uji = lastEngSummary || document.getElementById('edp5')?.value.trim() || data.edp?.s5;
+  if (!prob && !ide && !uji) {
+   toast('Isi terlebih dahulu masalah, ide, atau uji coba Penyiram Tetes sebelum dibagikan!');
+   return;
+  }
+  snippet = `🛠️ Laporan Proyek Penyiram Tetes Hemat Air (EDP):\n• Masalah: ${prob || '-'}\n• Ide Solusi: ${ide || '-'}\n• Hasil Uji: ${uji || '-'}`;
+ } else if (type === 'filter') {
+  const prob = document.getElementById('edpProblem')?.value.trim() || data.edp?.problem;
+  const susunan = data.waterFilter
+   ? `Kerikil ${data.waterFilter.g} cm, Pasir ${data.waterFilter.s} cm, Arang ${data.waterFilter.c} cm, Kapas ${data.waterFilter.cot} cm`
+   : '-';
+  const hasil = lastFilterSummary || (data.waterFilter
+   ? `Kejernihan ${data.waterFilter.clarity}%, Sisa Bau/Racun ${data.waterFilter.remainingToxin}% (${data.waterFilter.ecoStatus})`
+   : (document.getElementById('edp5')?.value.trim() || data.edp?.s5));
+  if (!data.waterFilter && !lastFilterSummary && !prob) {
+   toast('Uji terlebih dahulu Simulasi Filter Air Sederhana di menu Proyek STEM – EDP!');
+   return;
+  }
+  snippet = `🚰 Laporan Proyek Filter Air Sederhana (EDP):\n• Masalah Air: ${prob || 'Penjernihan air tercemar untuk ekosistem'}\n• Susunan Bahan: ${susunan}\n• Hasil Uji Filter: ${hasil || '-'}`;
+ }
+
+ if (!stayOnPage) go('collab');
+ const topicSel = document.getElementById('collabTopic');
+ const msgBox = document.getElementById('collabMessage');
+ const nameBox = document.getElementById('collabAuthorName');
+ if (nameBox && !nameBox.value.trim() && data.name) {
+  nameBox.value = `${data.name}${data.kelas ? ' (' + data.kelas + ')' : ''}`;
+ }
+ if (topicSel) {
+  if (type === 'cer') topicSel.value = '🔬 Hasil Eksperimen Eco-Sim & CER';
+  else if (type === 'filter') topicSel.value = '🚰 Ide Proyek Filter Air Sederhana (EDP)';
+  else topicSel.value = '🛠️ Ide Proyek Penyiram Tetes (EDP)';
+ }
+ if (msgBox) {
+  msgBox.value = snippet;
+  msgBox.focus();
+ }
+ toast('Laporan proyek ditempel ke formulir diskusi!');
+}
+
+async function submitCollabPost() {
+ const roleSel = document.getElementById('collabRole')?.value || 'siswa';
+ const pin = (document.getElementById('teacherPinInput')?.value || '').trim().toUpperCase();
+ const isVerifiedTeacher = roleSel === 'guru' && pin === 'GURU5';
+ if (roleSel === 'guru' && !isVerifiedTeacher) {
+  toast('Masukkan kode guru yang benar untuk mengirim sebagai Guru.');
+  return;
+ }
+
+ const rawName = document.getElementById('collabAuthorName')?.value.trim();
+ const defaultName = data.name ? `${data.name}${data.kelas ? ' (' + data.kelas + ')' : ''}` : 'Penjelajah Cilik';
+ const author = rawName || (isVerifiedTeacher ? 'Guru Pendamping' : defaultName);
+ const topic = document.getElementById('collabTopic')?.value || '❓ Pertanyaan Materi Ekosistem';
+ const message = document.getElementById('collabMessage')?.value.trim();
+
+ if (!message) {
+  toast('Tuliskan isi pesan atau temuanmu terlebih dahulu.');
+  return;
+ }
+
+ const newPost = {
+  id: 'post-' + Date.now() + '-' + Math.random().toString(36).slice(2, 6),
+  author,
+  role: isVerifiedTeacher ? 'guru' : 'siswa',
+  topic,
+  message,
+  likes: 0,
+  createdAt: Date.now(),
+  replies: []
+ };
+
+ document.getElementById('collabMessage').value = '';
+ mark('collab');
+
+ if (cloudReady && cloudDb && window._fsOps) {
+  try {
+   const { collection, addDoc } = window._fsOps;
+   await addDoc(collection(cloudDb, 'ecoquest_discussions'), newPost);
+   toast('Kiriman terkirim ke papan diskusi kelas!');
+   return;
+  } catch (err) {
+   console.warn('Cloud post fallback to local:', err);
+  }
+ }
+
+ collabPosts.unshift(newPost);
+ saveLocalCollabPosts();
+ renderCollabPosts();
+ toast('Kiriman ditambahkan ke papan diskusi!');
+}
+
+async function likeCollabPost(postId) {
+ const post = collabPosts.find(p => p.id === postId);
+ if (!post) return;
+ post.likes = (post.likes || 0) + 1;
+
+ if (cloudReady && cloudDb && window._fsOps && post._docId) {
+  try {
+   const { doc, updateDoc } = window._fsOps;
+   await updateDoc(doc(cloudDb, 'ecoquest_discussions', post._docId), { likes: post.likes });
+   return;
+  } catch (e) {}
+ }
+
+ saveLocalCollabPosts();
+ renderCollabPosts();
+}
+
+async function submitCollabReply(postId) {
+ const inp = document.getElementById('reply-input-' + postId);
+ if (!inp) return;
+ const text = inp.value.trim();
+ if (!text) return;
+
+ const roleSel = document.getElementById('collabRole')?.value || 'siswa';
+ const pin = (document.getElementById('teacherPinInput')?.value || '').trim().toUpperCase();
+ const isTeacher = roleSel === 'guru' && pin === 'GURU5';
+ const rawName = document.getElementById('collabAuthorName')?.value.trim();
+ const author = rawName || (isTeacher ? 'Guru Pendamping' : (data.name || 'Teman Sekelas'));
+
+ const post = collabPosts.find(p => p.id === postId);
+ if (!post) return;
+ post.replies = post.replies || [];
+ post.replies.push({
+  author,
+  role: isTeacher ? 'guru' : 'siswa',
+  text,
+  createdAt: Date.now()
+ });
+ inp.value = '';
+
+ if (cloudReady && cloudDb && window._fsOps && post._docId) {
+  try {
+   const { doc, updateDoc } = window._fsOps;
+   await updateDoc(doc(cloudDb, 'ecoquest_discussions', post._docId), { replies: post.replies });
+   toast('Balasan terkirim!');
+   return;
+  } catch (e) {}
+ }
+
+ saveLocalCollabPosts();
+ renderCollabPosts();
+ toast('Balasan terkirim!');
+}
+
+function renderCollabPosts() {
+ const feed = document.getElementById('collabFeed');
+ if (!feed) return;
+ const filter = document.getElementById('collabFilter')?.value || 'all';
+ const list = collabPosts.filter(p => {
+  if (filter === 'all') return true;
+  if (filter === 'guru' || filter === 'siswa') return p.role === filter;
+  if (filter === 'penyiram') return (p.topic || '').includes('Penyiram');
+  if (filter === 'filter') return (p.topic || '').includes('Filter Air');
+  return true;
+ });
+
+ if (list.length === 0) {
+  feed.innerHTML = `<div class="callout">Belum ada kiriman pada kategori ini. Jadilah yang pertama berbagi temuan!</div>`;
+  return;
+ }
+
+ feed.innerHTML = list.map(p => {
+  const isGuru = p.role === 'guru';
+  const timeStr = new Date(p.createdAt || Date.now()).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+  const repliesHtml = (p.replies || []).map(rep => `
+   <div class="collab-reply-item ${rep.role === 'guru' ? 'teacher-reply' : ''}">
+    <b>${rep.role === 'guru' ? '👩‍🏫 ' : '👦 '}${escapeHtml(rep.author)}</b>
+    ${rep.role === 'guru' ? '<span class="role-badge guru" style="margin-left:5px">UMPAN BALIK GURU</span>' : ''}
+    <div style="margin-top:3px">${escapeHtml(rep.text)}</div>
+   </div>
+  `).join('');
+
+  return `<div class="collab-post ${isGuru ? 'teacher' : ''}">
+   <div class="collab-meta">
+    <div class="collab-author">
+     <span>${isGuru ? '👩‍🏫' : '👦'} ${escapeHtml(p.author)}</span>
+     <span class="role-badge ${isGuru ? 'guru' : 'siswa'}">${isGuru ? 'UMPAN BALIK GURU' : 'SISWA'}</span>
+    </div>
+    <span class="smalltext">${escapeHtml(p.topic)} • ${timeStr}</span>
+   </div>
+   <div class="collab-body">${escapeHtml(p.message)}</div>
+   <div class="collab-actions">
+    <button type="button" class="collab-react-btn" onclick="likeCollabPost('${p.id}')">👏 Apresiasi (${p.likes || 0})</button>
+    <span class="smalltext">💬 ${(p.replies || []).length} balasan</span>
+   </div>
+   ${repliesHtml ? `<div class="collab-replies">${repliesHtml}</div>` : ''}
+   <div class="collab-reply-form">
+    <input id="reply-input-${p.id}" placeholder="Tulis balasan atau umpan balik..." onkeydown="if(event.key==='Enter'){event.preventDefault();submitCollabReply('${p.id}')}">
+    <button type="button" class="btn small" onclick="submitCollabReply('${p.id}')">Balas</button>
+   </div>
+  </div>`;
+ }).join('');
+}
+
+async function setupOptionalCloudCollab() {
+ try {
+  const [{ initializeApp }, { getAuth, signInAnonymously }, fsMod] = await Promise.all([
+   import('https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js'),
+   import('https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js'),
+   import('https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js')
+  ]);
+  const app = initializeApp(firebaseClassConfig);
+  const auth = getAuth(app);
+  await signInAnonymously(auth);
+  cloudDb = fsMod.getFirestore(app);
+  window._fsOps = fsMod;
+
+  const q = fsMod.query(fsMod.collection(cloudDb, 'ecoquest_discussions'), fsMod.orderBy('createdAt', 'desc'));
+  fsMod.onSnapshot(q, (snap) => {
+   cloudReady = true;
+   const badge = document.getElementById('collabSyncBadge');
+   if (badge) {
+    badge.textContent = '🟢 TERHUBUNG REAL-TIME (105+ SISWA)';
+    badge.style.background = '#e1f4d8';
+    badge.style.color = '#176b4d';
+   }
+   const docs = [];
+   snap.forEach(d => {
+    docs.push({ _docId: d.id, ...d.data() });
+   });
+   collabPosts = docs.length ? docs : getDefaultCollabPosts();
+   renderCollabPosts();
+  });
+ } catch (err) {
+  cloudReady = false;
+ }
+}
+
+function initCollab() {
+ const nameBox = document.getElementById('collabAuthorName');
+ if (nameBox && data.name) {
+  nameBox.value = `${data.name}${data.kelas ? ' (' + data.kelas + ')' : ''}`;
+ }
+ loadLocalCollabPosts();
+ setupOptionalCloudCollab();
+}
+
+/* === DASHBOARD CAPAIAN & RESET PROGRES === */
+function buildWaSummary() {
+ const totalMisi = 7;
+ const persen = Math.min(100, Math.round((data.done.length / totalMisi) * 100));
+ const arcadeTotal = Object.values(data.arcade || {}).reduce((a, b) => a + b, 0);
+ return [
+  '🌿 *LAPORAN BELAJAR ECOQUEST (IPAS KELAS V)*',
+  `Nama: ${data.name || '-'}`,
+  `Kelas: ${data.kelas || '-'}`,
+  `Progres Misi: ${persen}% (${data.done.length}/${totalMisi} zona)`,
+  `Puzzle Biotik-Abiotik: ${data.puzzle || 0}/10 benar`,
+  `Nilai Evaluasi Akhir: ${data.quiz !== null ? data.quiz + '/100' : 'Belum dikerjakan'}`,
+  `Total Poin Eco Arcade: ${arcadeTotal} poin`,
+  `Uji Penyiram Tetes: ${data.engineering ? data.engineering.pct + '% kecukupan (terbuang ' + data.engineering.waste + ' ml)' : 'Belum diuji'}`,
+  `Uji Filter Air: ${data.waterFilter ? 'Kejernihan ' + data.waterFilter.clarity + '%, Sisa Racun ' + data.waterFilter.remainingToxin + '%' : 'Belum diuji'}`
+ ].join('\n');
+}
+
+function sendToTeacherWa() {
+ const raw = (document.getElementById('teacherWa')?.value || data.teacherWa || '').replace(/\D/g, '');
+ const phone = raw.startsWith('0') ? '62' + raw.slice(1) : raw;
+ const text = encodeURIComponent(buildWaSummary());
+ const url = phone ? `https://wa.me/${phone}?text=${text}` : `https://wa.me/?text=${text}`;
+ window.open(url, '_blank', 'noopener');
+}
+
+function copyWaSummary() {
+ const el = document.getElementById('waPreview');
+ if (!el) return;
+ el.select();
+ document.execCommand('copy');
+ toast('Teks laporan berhasil disalin!');
+}
+
+function downloadProgressPng() {
+ const canvas = document.createElement('canvas');
+ canvas.width = 900;
+ canvas.height = 540;
+ const ctx = canvas.getContext('2d');
+ if (!ctx) return;
+
+ const grad = ctx.createLinearGradient(0, 0, 900, 540);
+ grad.addColorStop(0, '#104432');
+ grad.addColorStop(1, '#2e8a5b');
+ ctx.fillStyle = grad;
+ ctx.fillRect(0, 0, 900, 540);
+
+ ctx.fillStyle = '#ffffff';
+ ctx.beginPath();
+ ctx.roundRect(36, 36, 828, 468, 24);
+ ctx.fill();
+
+ const totalMisi = 7;
+ const persen = Math.min(100, Math.round((data.done.length / totalMisi) * 100));
+ const arcadeTotal = Object.values(data.arcade || {}).reduce((a, b) => a + b, 0);
+
+ ctx.fillStyle = '#176b4d';
+ ctx.font = 'bold 28px Inter, sans-serif';
+ ctx.fillText('🌿 KARTU CAPAIAN ECOQUEST — IPAS KELAS V', 70, 96);
+
+ ctx.fillStyle = '#20352b';
+ ctx.font = 'bold 22px Inter, sans-serif';
+ ctx.fillText(`Nama: ${data.name || 'Penjelajah Cilik'}   |   Kelas: ${data.kelas || '-'}`, 70, 146);
+
+ ctx.fillStyle = '#f0f8ed';
+ ctx.fillRect(70, 175, 760, 235);
+
+ ctx.fillStyle = '#176b4d';
+ ctx.font = 'bold 19px Inter, sans-serif';
+ ctx.fillText(`• Progres Petualangan : ${persen}% (${data.done.length} dari ${totalMisi} misi selesai)`, 96, 218);
+ ctx.fillText(`• Nilai Evaluasi Akhir  : ${data.quiz !== null ? data.quiz + ' / 100' : 'Belum dikerjakan'}`, 96, 258);
+ ctx.fillText(`• Total Poin Eco Arcade : ${arcadeTotal} poin   |   Puzzle: ${data.puzzle || 0}/10`, 96, 298);
+ ctx.fillText(`• Penyiram Tetes        : ${data.engineering ? data.engineering.pct + '% kecukupan air' : 'Belum diuji'}`, 96, 338);
+ ctx.fillText(`• Filter Air Sederhana  : ${data.waterFilter ? 'Kejernihan ' + data.waterFilter.clarity + '%' : 'Belum diuji'}`, 96, 378);
+
+ ctx.fillStyle = '#64766b';
+ ctx.font = '16px Inter, sans-serif';
+ ctx.fillText('Harmoni dalam Ekosistem • Dicetak dari E-Modul EcoQuest', 70, 462);
+
+ const link = document.createElement('a');
+ link.download = `Kartu-Capaian-EcoQuest-${(data.name || 'Siswa').replace(/[^a-zA-Z0-9_-]+/g, '-')}.png`;
+ link.href = canvas.toDataURL('image/png');
+ link.click();
+ toast('Kartu capaian PNG berhasil diunduh!');
+}
+
+function updateDashboard() {
+ const totalMisi = 7;
+ const selesai = data.done.length;
+ const persen = Math.min(100, Math.round((selesai / totalMisi) * 100));
+ const arcadeTotal = Object.values(data.arcade || {}).reduce((a, b) => a + b, 0);
+
+ const sidePct = document.getElementById('sidePercent');
+ const sideBar = document.getElementById('sideBar');
+ if (sidePct) sidePct.textContent = persen + '%';
+ if (sideBar) sideBar.style.width = persen + '%';
+
+ const dashPct = document.getElementById('dashPercent');
+ const dashBar = document.getElementById('dashBar');
+ const dashName = document.getElementById('dashName');
+ const dashClass = document.getElementById('dashClass');
+ const dashQuiz = document.getElementById('dashQuiz');
+ const dashArcade = document.getElementById('dashArcade');
+ const dashPuzzle = document.getElementById('dashPuzzle');
+ const arcadeBadge = document.getElementById('arcadeTotal');
+
+ if (dashPct) dashPct.textContent = persen + '% selesai';
+ if (dashBar) dashBar.style.width = persen + '%';
+ if (dashName) dashName.textContent = data.name || 'Belum diisi';
+ if (dashClass) dashClass.textContent = `Kelas ${data.kelas || '—'}`;
+ if (dashQuiz) dashQuiz.textContent = data.quiz !== null ? `${data.quiz}/100` : '—';
+ if (dashArcade) dashArcade.textContent = arcadeTotal;
+ if (dashPuzzle) dashPuzzle.textContent = `${data.puzzle || 0}/10`;
+ if (arcadeBadge) arcadeBadge.textContent = arcadeTotal;
+
+ const missions = [
+  ['learn', '📚 Eksplorasi Materi & Video Harmoni Ekosistem'],
+  ['puzzle', '🧩 Puzzle Klasifikasi Biotik & Abiotik (10/10)'],
+  ['lab', '🧪 Eksperimen Eco-Sim Virtual Lab & Catatan CER'],
+  ['arcade', '🕹️ Tantangan Game Eco Arcade'],
+  ['edp', '🛠️ Proyek Rekayasa Penyiram Air & Filter Air (6 Tahap EDP)'],
+  ['quiz', '📝 Evaluasi Akhir Harmoni Ekosistem'],
+  ['reflection', '💭 Jurnal Refleksi Petualang Ekosistem']
+ ];
+
+ const achList = document.getElementById('achievementList');
+ if (achList) {
+  achList.innerHTML = missions.map(([key, title]) => {
+   const ok = data.done.includes(key);
+   return `<div class="between" style="padding:9px 0;border-bottom:1px solid var(--line);font-size:13px">
+    <span>${title}</span>
+    <span class="tag" style="${ok ? 'background:#e1f4d8;color:#176b4d' : 'background:#f2f4f2;color:#7a8a80'}">${ok ? '✓ Selesai' : 'Belum'}</span>
+   </div>`;
+  }).join('');
+ }
+
+ const waPrev = document.getElementById('waPreview');
+ if (waPrev) waPrev.value = buildWaSummary();
+}
+
+function exportReport() {
+ const text = buildWaSummary() + '\n\n--- CATATAN CER ---\nClaim: ' + (data.cer?.claim || '-') + '\nEvidence: ' + (data.cer?.evidence || '-') + '\nReasoning: ' + (data.cer?.reason || '-');
+ const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+ const link = document.createElement('a');
+ link.href = URL.createObjectURL(blob);
+ link.download = `Laporan-EcoQuest-${(data.name || 'Siswa').replace(/[^a-zA-Z0-9_-]+/g, '-')}.txt`;
+ link.click();
+ toast('Laporan TXT berhasil diunduh!');
+}
+
+function resetData() {
+ localStorage.removeItem(KEY);
+ data = {
+  ...defaults,
+  done: [],
+  cer: { claim: '', evidence: '', reason: '' },
+  arcade: {},
+  edp: { projectType: 'Penyiram Tetes Hemat Air', problem: '', s1: '', s2: '', s3: '', s4: '', s5: '', s6: '' },
+  reflection: { mood: '', r1: '', r2: '', r3: '', r4: '' }
+ };
+ document.getElementById('studentName').value = '';
+ document.getElementById('studentClass').value = '';
+ resetPuzzle();
+ resetLab();
+ loadCER();
+ resetEngineering();
+ resetWaterFilter();
+ loadEDP();
+ restartQuiz();
+ loadReflection();
+ updateDashboard();
+ toast('Seluruh progres belajar berhasil diatur ulang.');
+}
+
+/* === INISIALISASI HALAMAN SAAT DIMUAT === */
+document.addEventListener('DOMContentLoaded', () => {
+ document.getElementById('studentName').value = data.name || '';
+ document.getElementById('studentClass').value = data.kelas || '';
+ const waInp = document.getElementById('teacherWa');
+ if (waInp) waInp.value = data.teacherWa || '';
+
+ renderPuzzle();
+ syncLab();
+ loadCER();
+ initBucketDrag();
+ syncEngineering();
+ syncWaterFilter();
+ loadEDP();
+ renderQuiz();
+ loadReflection();
+ initGemaChat();
+ initCollab();
+ updateDashboard();
+});
+</script>
+</body>
+</html>
